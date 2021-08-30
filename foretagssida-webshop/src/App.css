@@ -14,10 +14,15 @@
   padding: 5.6875rem 4.6875rem;
   background: #C4C4C4;
 }
+  .inner-contents {
+    
+    max-width: 51%;
+  }
   .gray-area h1 {
     font-size: 3.25rem;
     font-weight: 700;
     line-height: 60px;
+    color: #FFFFFF;
   }
 /* Cuong - Om oss */
 
