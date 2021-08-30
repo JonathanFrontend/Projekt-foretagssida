@@ -5,6 +5,20 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/*Header*/
+/* Johannes - Header*/
 
-/*Footer*/
+/* Mandus - Footer*/
+
+/* Jonathan - Startsida */
+.gray-area {
+  padding: 5.6875rem 4.6875rem;
+  background: #C4C4C4;
+}
+  .gray-area h1 {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 60px;
+  }
+/* Cuong - Om oss */
+
+/* Kontakt */
