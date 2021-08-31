@@ -28,7 +28,9 @@ function Startpage(){
             <section className='white-area'>
                 <div className="bookshelf">
                     <article className="top-shelf">
-                        {books.popularBooks.map(book => <Book props={book}/>)}
+                        {
+                            books.popularBooks.map(book => <Book book={book}/>)
+                        }
                     </article>
                     <article className="bottom-shelf">
                         
