@@ -1,4 +1,6 @@
 import React from 'react';
+import Book from './Book'
+import books from '../books.json';
 
 function Startpage(){
     return (
@@ -23,9 +25,16 @@ function Startpage(){
                     </div>
                 </div>
             </div>
-            <div className='white-area'>
-
-            </div>
+            <section className='white-area'>
+                <div className="bookshelf">
+                    <article className="top-shelf">
+                        {books.popularBooks.map(book => <Book props={book}/>)}
+                    </article>
+                    <article className="bottom-shelf">
+                        
+                    </article>
+                </div>
+            </section>
         </main>
     )
 }

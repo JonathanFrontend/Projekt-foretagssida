@@ -1,0 +1,52 @@
+{
+    "popularBooks": [
+        {
+            "title": "Steve Jobs",
+            "author": "Walter Isaac",
+            "poster": "Rectangle 4.png",
+            "price": 500,
+            "rating": 3.5,
+            "wantToRead": false
+        },
+        {
+            "title": "Thrones of Glass",
+            "author": "Sarah J. Maas",
+            "poster": "Rectangle 5.png",
+            "price": 500,
+            "rating": 3,
+            "wantToRead": false
+        },
+        {
+            "title": "Unspeakable Things",
+            "author": "Jess Lourey",
+            "poster": "Rectangle 6.png",
+            "price": 500,
+            "rating": 4,
+            "wantToRead": false
+        },
+        {
+            "title": "American Gods",
+            "author": "Neil Gaiman",
+            "poster": "Rectangle 7.png",
+            "price": 500,
+            "rating": 5,
+            "wantToRead": false
+        },
+        {
+            "title": "Let the Right One In",
+            "author": "John Ajvide Lindqvist",
+            "poster": "Rectangle 8.png",
+            "price": 500,
+            "rating": 5,
+            "wantToRead": false
+        },
+        {
+            "title": "The Girl in Red",
+            "author": "Christina Henry",
+            "poster": "Rectangle 9.png",
+            "price": 500,
+            "rating": 3,
+            "wantToRead": false
+        }
+    ]
+}
