@@ -21,6 +21,10 @@
   }
 /* Cuong - Om oss */
 .about-h2{
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 60px;
+  color: #FFFFFF;
   text-align: center;
 }
 .personal-container{
