@@ -14,18 +14,16 @@ function About() {
             </div>
                 <div className="desc-content">
                     <h3 className="about-h3">Företagsmotto</h3>
-                    <h2 className="about-h2"> När du läser en bra bok då händer alltid nått magiskt!</h2> 
-                    <p className="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cumque commodi labore modi? Tenetur veniam fugiat fugit dolor sequi nostrum quidem 
-                    laborum, possimus quo dolores debitis veniam consequuntur explicabo, esse hic quisquam voluptas quos. Ea qui</p> 
-
+                    <h2 className="about-h2"> När du läser en bra bok då händer alltid nåt magiskt!</h2> 
+                    <p className="about-p">Vi erbjuder klassiska böcker, tidsskrifter, ljudböcker och filmer till ett förmånligt pris.</p> 
                     <h3 className="about-h3">Medarbetare</h3>
                 <div className="personal-content">
                     {Staff.personal.map((staff, key) => <div className="personal-card" key={key}> 
                     <img className="image"src={`/images/${staff.img}`} alt={staff.alt_text}/> 
                         <div className="about-text">
-                            <h6>{staff.mail}</h6>
-                            <h5>{staff.role}</h5>
-                            <h4>{staff.name}</h4>
+                            <h2>{staff.name}</h2>
+                            <h4>{staff.role}</h4>
+                            <h4>{staff.mail}</h4>
                         </div>
                     </div>)}
                 </div>
