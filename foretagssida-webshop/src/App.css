@@ -11,7 +11,7 @@
 
 /* Jonathan - Startsida */
 .hero {
-  padding: 5.6875rem 4.6875rem;
+  padding: 7.8125rem 4.6875rem;
   position: relative;
   width: 100%;
 }
@@ -28,9 +28,22 @@
   left: 0;
   z-index: -1;
 }
-  .hero-contents {
-    width: 100%;
+.hero-contents {
+  width: 100%;
+}
+.hero-box {
+  width: 100%;
+}
+  .hero-box-1 {
     max-width: 823px;
+  }
+  .hero-box-2 {
+    max-width: 480px;
+    margin-top: 1.25rem;
+  }
+  .hero-box-3 {
+    max-width: 823px;
+    margin: 1.25rem 0;
   }
 .hero-title {
   font-size: 3.25rem;
@@ -39,14 +52,23 @@
   color: #FFFFFF;
 }
 .hero-text {
-  margin-top: 1.25rem;
   font-size: 1.375rem;
   color: #FFFFFF;
   font-weight: 500;
 }
 .btn {
-
+  background-color: #BA3FCA;
+  padding: 0.75rem 1.375rem;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
 }
+  .btn:hover {
+    
+  }
 /* Cuong - Om oss */
 
 /* Kontakt */
