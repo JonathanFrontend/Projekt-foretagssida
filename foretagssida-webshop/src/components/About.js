@@ -9,15 +9,19 @@ function About() {
         
    return (
         <div className="personal-container">
+            
             <h2 className="about-h2"> När du läser en bra bok då händer alltid nått magiskt!</h2> 
             
             <p className="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cumque commodi labore modi? Tenetur veniam fugiat fugit dolor sequi nostrum quidem 
             laborum, possimus quo dolores debitis veniam consequuntur explicabo, esse hic quisquam voluptas quos. Ea qui</p> 
+            
             <div className="personal-content">
             {Staff.personal.map((staff, key) => <div className="personal-card" key={key}> 
-            <img src={`/assets/${staff.img}`} alt={staff.alt_text}/> 
+            <img className="image"src={`/assets/${staff.img}`} alt={staff.alt_text}/> 
+            <div className="about-text">
             <h5>{staff.role}</h5>
             <h6>{staff.mail}</h6>
+            </div>
             </div>)}
             </div>
         </div>
