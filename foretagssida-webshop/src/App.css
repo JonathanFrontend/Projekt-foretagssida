@@ -3,7 +3,11 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-}
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+} 
 
 /* Johannes - Header*/
 .nav_bar {
@@ -15,10 +19,14 @@
 
 .nav_company {
   height: 100%;
-  flex-grow: 0.5;
+  flex-grow: 1;
   display: flex;
   align-items: center;
-  
+}
+
+.nav_company Link {
+  text-decoration: none;
+  color: black;
 }
 
 .nav_logo {
@@ -28,11 +36,20 @@
 
 .nav_head {
   margin-left: 0.4rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.link_head {
+  text-decoration: none;
+  color: #262626;
 }
 
 .nav_menu {
   height: 100%;
-  flex-grow: 1;
+  flex-grow: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,6 +59,10 @@
   text-decoration: none;
   color: black;
   margin-left: 5rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .nav_link:hover {
@@ -51,24 +72,23 @@
 
 .nav_buttons {
   height: 100%;
-  flex-grow: 2;
+  flex-grow: 1;
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   justify-content: center;
-  align-items: center;
 }
 
 .first_btn {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .arrow_down {
-  margin-left: 6px;
   background: none;
   border: none;
   display: flex;
   align-items: center;
+  margin-left: 6px;
 }
 
 .arrow_size {
@@ -81,7 +101,31 @@
 }
 
 .hidden {
-  display: none;
+  height: 25px;
+  width: 40px;
+  background: white;
+  border: none;
+}
+
+.one {
+  display: flex;
+  width: 100px;
+}
+
+.two {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  width: 43px;
+  height: 33px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-top: #BA3FCA 3px solid;
+}
+
+.two:hover {
+  cursor: pointer;
 }
 
 
