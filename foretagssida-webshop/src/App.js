@@ -1,6 +1,7 @@
 import './App.css';
 import {Redirect, Route, Switch} from 'react-router-dom';
 import Startpage from './components/Startpage'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           */}
         </Switch>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
