@@ -11,7 +11,7 @@ function About() {
         <div className="personal-container">
             <h2 className="about-h2"> När du läser en bra bok då händer alltid nått magiskt!</h2> 
             
-            <p className="about-h2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cumque commodi labore modi? Tenetur veniam fugiat fugit dolor sequi nostrum quidem 
+            <p className="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cumque commodi labore modi? Tenetur veniam fugiat fugit dolor sequi nostrum quidem 
             laborum, possimus quo dolores debitis veniam consequuntur explicabo, esse hic quisquam voluptas quos. Ea qui</p> 
             <div className="personal-content">
             {Staff.personal.map((staff, key) => <div className="personal-card" key={key}> 

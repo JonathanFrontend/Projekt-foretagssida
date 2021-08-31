@@ -27,6 +27,11 @@
   color: #FFFFFF;
   text-align: center;
 }
+.about-p{
+  font-size: 1.375rem;
+  color: #FFFFFF;
+  font-weight: 500;
+}
 .personal-container{
   width: 100%;
   height: 100%;
