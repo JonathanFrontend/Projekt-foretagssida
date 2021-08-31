@@ -10,20 +10,43 @@
 /* Mandus - Footer*/
 
 /* Jonathan - Startsida */
-.gray-area {
+.hero {
   padding: 5.6875rem 4.6875rem;
-  background: #C4C4C4;
+  position: relative;
+  width: 100%;
 }
-  .inner-contents {
-    
-    max-width: 51%;
+.hero::before {
+  content: "";
+  position: absolute;
+  background-image: url('./images/pawel-czerwinski-fPN1w7bIuNU-unsplash\ 1.png');
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+  .hero-contents {
+    width: 100%;
+    max-width: 823px;
   }
-  .gray-area h1 {
-    font-size: 3.25rem;
-    font-weight: 700;
-    line-height: 60px;
-    color: #FFFFFF;
-  }
+.hero-title {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+.hero-text {
+  margin-top: 1.25rem;
+  font-size: 1.375rem;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.btn {
+
+}
 /* Cuong - Om oss */
 
 /* Kontakt */
