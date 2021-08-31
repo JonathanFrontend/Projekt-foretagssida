@@ -20,5 +20,26 @@
     line-height: 60px;
   }
 /* Cuong - Om oss */
+.about-h2{
+  text-align: center;
+}
+.personal-container{
+  width: 100%;
+  height: 100%;
+  background: #C4C4C4;
+}
+
+.personal-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  
+}
+.personal-card{
+
+}
 
 /* Kontakt */
