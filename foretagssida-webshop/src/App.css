@@ -12,7 +12,7 @@
 /* Jonathan - Startsida */
 .gray-area {
   padding: 5.6875rem 4.6875rem;
-  background: #C4C4C4;
+  background: #FFFFFF;
 }
   .gray-area h1 {
     font-size: 3.25rem;
@@ -21,43 +21,69 @@
   }
 /* Cuong - Om oss */
 .about-h2{
+  padding: 3rem 0;
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 60px;
-  color: #FFFFFF;
-  text-align: center;
+  color: #000000;
 }
+.about-h3{
+  font-size: 2rem;
+  color: #BA3FCA;
+}
+
 .about-p{
   font-size: 1.375rem;
-  color: #FFFFFF;
+  color: #000000;
   font-weight: 500;
+  padding-bottom: 4rem;
 }
 .personal-container{
-
+  display: flex;
+  flex-direction:column;
   width: 100%;
-  height: 100%;
   background: #C4C4C4;
+}
+
+.header-img{
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  background: url("./img/header.png") no-repeat;
+  height: 242px;
+  width: 100%;
+  
+}
+.header-text{
+  font-size: 3rem;
+  color:#FFFFFF;
+}
+.desc-content{
+  padding: 3rem;
 }
 
 .personal-content{
   display: grid;
-  grid-template-columns: auto 1fr;
-  justify-content: space-around;
-  align-items: center;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto;
+  padding-top: 4rem;
   width: 100%;
   height: 100%;
 }
 .image{
+  padding-right: 18px;
   border-radius: 50%;
 }
 .about-text{
+  
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   
 }
 .personal-card{
-  height: 300px;
   display: flex;
+  align-items: center;
+  justify-content: end;
   padding: 5px;
 }
 

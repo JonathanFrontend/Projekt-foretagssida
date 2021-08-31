@@ -2,14 +2,14 @@
     "personal": [
       {
         "name": "Jackie",
-        "img": "girl1.jpg",
+        "img": "girl4.png",
         "role" : "administratör",
         "alt_text":"Jackie face",
         "mail":"jackie@bok.com"
       },
       {
         "name": "Hugo",
-        "img": "man1.jpg",
+        "img": "man1.png",
         "role" : "projekt ledare",
         "alt_text":"Hugo face",
         "mail":"hugo@bok.com"
@@ -17,21 +17,21 @@
       
       {
         "name": "Paula",
-        "img": "girl2.jpg",
+        "img": "girl2.png",
         "role" : "kundservice",
         "alt_text":"Paula face",
         "mail":"paulo@bok.com"
       },
       {
         "name": "Peter",
-        "img": "man2.jpg",
+        "img": "man2.png",
         "role" : "tekniks support",
         "alt_text":"Peter face",
         "mail":"peter@bok.com"
       },
       {
         "name": "Jane",
-        "img": "girl3.jpg",
+        "img": "girl3.png",
         "role" : "markands chef",
         "alt_text":"Jane face",
         "mail":"jane@bok.com"
@@ -39,21 +39,21 @@
       
       {
         "name": "Ola",
-        "img": "man3.jpg",
+        "img": "man3.png",
         "role" : "administratör",
         "alt_text":"Ola face",
         "mail":"ola@bok.com"
       },
       {
         "name": "Pia",
-        "img": "girl4.jpg",
+        "img": "girl4.png",
         "role" : "administratör",
         "alt_text":"Pia face",
         "mail":"pia@bok.com"
       },
       {
         "name": "Zach",
-        "img": "man4.jpg",
+        "img": "man4.png",
         "role" : "tekinks support",
         "alt_text":"Zack face",
         "mail":"zach@bok.com"
