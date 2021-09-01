@@ -305,6 +305,7 @@ footer p{
   color: #000000;
 }
 .about-h3{
+  padding-top: 6rem;
   font-size: 2rem;
   color: #BA3FCA;
 }
@@ -326,7 +327,10 @@ footer p{
   display: flex;
   align-items: center;
   padding-left: 2rem;
-  background: url("./images/header.png") no-repeat;
+  background: url("./images/header.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 242px;
   width: 100%;
   
@@ -343,10 +347,13 @@ footer p{
   display: flex;
   justify-content: flex-end;
   padding-right: 1rem;
-  background: url("./images/MicrosoftTeams-image\ \(3\).png") no-repeat;
+  background: url("./images/MicrosoftTeams-image\ \(3\).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 387px;
   width: 100%;
-  left: 84px;
+  
 }
 .about-img-text{
   font-size: 3rem;
