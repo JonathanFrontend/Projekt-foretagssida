@@ -161,15 +161,141 @@ footer p{
 }
 
 /* Jonathan - Startsida */
-.gray-area {
-  padding: 5.6875rem 4.6875rem;
-  background: #FFFFFF;
+.wrapper {
+  width: 100%;
 }
-  .gray-area h1 {
-    font-size: 3.25rem;
-    font-weight: 700;
-    line-height: 60px;
+.hero, .main-contents {
+  padding: 7.8125rem 4.6875rem;
+  position: relative;
+  width: 100%;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  background-image: url('./images/pawel-czerwinski-fPN1w7bIuNU-unsplash\ 1.png');
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.hero-contents {
+  width: 100%;
+}
+.hero-box {
+  width: 100%;
+}
+  .hero-box-1 {
+    max-width: 823px;
   }
+  .hero-box-2 {
+    max-width: 480px;
+    margin-top: 1.25rem;
+  }
+  .hero-box-3 {
+    max-width: 823px;
+    margin: 1.25rem 0;
+  }
+.hero-title {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+.hero-text {
+  font-size: 1.375rem;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.btn {
+  background-color: #BA3FCA;
+  padding: 0.75rem 1.375rem;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+}
+  .btn:hover {
+    background-color: #bf5ccc;
+  }
+.main-contents {
+  background-color: #FFFFFF;
+}
+.main-contents-top {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+  .title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+  }
+.shelf {
+  display: flex;
+  justify-content: space-between;
+}
+.book-container {
+  position: relative;
+  width: 190px;
+  min-height: 385px;
+}
+.check {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #FFFFFF;
+}
+.check::after, .check::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 100%;
+  background-color: inherit;
+}
+  .check::before {
+    clip-path: polygon(0% 0, 50% 0%, 0% 50%);
+  }
+  .check::after {
+    clip-path: polygon(50% 0%, 100% 0%, 100% 50%);
+  }
+  
+.black-check {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.green-check {
+  background-color: rgba(78, 255, 72, 0.9);
+}
+.fa-check, .fa-plus {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: 1.5625rem;
+}
+.book-poster {
+  min-height:310px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.buy-btn {
+  background-color: #8D179C;
+  padding: 0.625rem 2.6875rem;
+  border: none;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.5rem;
+}
 /* Cuong - Om oss */
 .about-h2{
   padding: 3rem 0;

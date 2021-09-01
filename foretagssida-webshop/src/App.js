@@ -12,7 +12,6 @@ function App() {
         <Switch>
           <Redirect exact path="/" to="/startpage" />
           <Route path="/startpage" component={Startpage} />
-          
           <Route path="/about" component={About} />
           {/* <Route path="/contact" component={Contact} />
           <Route component={ErrorPage} />  */}
