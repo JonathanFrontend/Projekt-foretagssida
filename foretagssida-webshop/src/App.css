@@ -289,6 +289,8 @@ footer p{
   left: 0.5rem;
   font-size: 1.5625rem;
 }
+.fa-star {
+}
 .book-poster {
   min-height:310px;
   width: 100%;
@@ -305,7 +307,7 @@ footer p{
       font-weight: bold;
       font-size: 20px;
       line-height: 24px;
-      color: #000000;
+      color: #FFA500;
     }
   .title-box{
     margin-top: .3rem;

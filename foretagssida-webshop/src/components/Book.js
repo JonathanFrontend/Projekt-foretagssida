@@ -21,7 +21,7 @@ function Book(props){
             {rating ? 
             <div className="rating-box">
                 <h3>
-                    {rating}
+                    {rating} <i class="fas fa-star"></i>
                 </h3>
             </div> : ""}
             <div className="title-box">
