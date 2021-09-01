@@ -10,7 +10,7 @@
 /* Mandus - Footer*/
 
 /* Jonathan - Startsida */
-.hero {
+.hero, .main-contents {
   padding: 7.8125rem 4.6875rem;
   position: relative;
   width: 100%;
@@ -67,11 +67,80 @@
   text-align: center;
 }
   .btn:hover {
-    
+    background-color: #bf5ccc;
   }
+.main-contents {
+  background-color: #FFFFFF;
+}
+.main-contents-top {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+  .title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+  }
+.shelf {
+  display: flex;
+  justify-content: space-between;
+}
+.book-container {
+  position: relative;
+  width: 190px;
+  min-height: 385px;
+}
+.check {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #FFFFFF;
+}
+.check::after, .check::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 100%;
+  background-color: inherit;
+}
+  .check::before {
+    clip-path: polygon(0% 0, 50% 0%, 0% 50%);
+  }
+  .check::after {
+    clip-path: polygon(50% 0%, 100% 0%, 100% 50%);
+  }
+  
+.black-check {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.green-check {
+  background-color: rgba(78, 255, 72, 0.9);
+}
+.fa-check, .fa-plus {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: 1.5625rem;
+}
 .book-poster {
-  height:auto;
-  width: auto;
+  min-height:310px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.buy-btn {
+  background-color: #8D179C;
+  padding: 0.625rem 2.6875rem;
+  border: none;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.5rem;
 }
 /* Cuong - Om oss */
 

@@ -25,14 +25,17 @@ function Startpage(){
                     </div>
                 </div>
             </div>
-            <section className='white-area'>
+            <section className='main-contents'>
+                <div className='main-contents-top'>
+                    <h2 className="title">Popular books</h2>
+                </div>
                 <div className="bookshelf">
-                    <article className="top-shelf">
+                    <article className="shelf">
                         {
                             books.popularBooks.map(book => <Book book={book}/>)
                         }
                     </article>
-                    <article className="bottom-shelf">
+                    <article className="shelf">
                         
                     </article>
                 </div>
