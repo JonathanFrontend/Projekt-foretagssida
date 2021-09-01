@@ -12,11 +12,9 @@ function App() {
         <Switch>
           <Redirect exact path="/" to="/startpage" />
           <Route path="/startpage" component={Startpage} />
-          <Route path="/kontakt" component={Kontakt} />
-          {/* 
-          
+          <Route path="/contact" component={Kontakt} />
           <Route path="/about" component={About} />
-          {/* <Route path="/contact" component={Contact} />
+          {/* 
           <Route component={ErrorPage} />  */}
           
         </Switch>

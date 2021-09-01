@@ -1,0 +1,114 @@
+{
+    "popularBooks": [
+        {
+            "id": "1",
+            "title": "Steve Jobs",
+            "author": "Walter Isaac",
+            "poster": "Rectangle_4.png",
+            "price": 500,
+            "rating": 3.5,
+            "wantToRead": false
+        },
+        {
+            "id": "2",
+            "title": "Thrones of Glass",
+            "author": "Sarah J. Maas",
+            "poster": "Rectangle_5.png",
+            "price": 500,
+            "rating": 3,
+            "wantToRead": false
+        },
+        {
+            "id": "3",
+            "title": "Unspeakable Things",
+            "author": "Jess Lourey",
+            "poster": "Rectangle_6.png",
+            "price": 500,
+            "rating": 4,
+            "wantToRead": false
+        },
+        {
+            "id": "4",
+            "title": "American Gods",
+            "author": "Neil Gaiman",
+            "poster": "Rectangle_7.png",
+            "price": 500,
+            "rating": 5,
+            "wantToRead": false
+        },
+        {
+            "id": "5",
+            "title": "Let the Right One In",
+            "author": "John Ajvide Lindqvist",
+            "poster": "Rectangle_8.png",
+            "price": 500,
+            "rating": 5,
+            "wantToRead": false
+        },
+        {
+            "id": "6",
+            "title": "The Girl in Red",
+            "author": "Christina Henry",
+            "poster": "Rectangle_9.png",
+            "price": 500,
+            "rating": 3,
+            "wantToRead": false
+        }
+    ],
+    "newBooks": [
+        {
+            "id": "7",
+            "title": "Realm Breaker",
+            "author": "Victoria Aveyard",
+            "poster": "Rectangle_12.png",
+            "price": 500,
+            "rating": 0,
+            "wantToRead": false
+        },
+        {
+            "id": "8",
+            "title": "We Are Satelites",
+            "author": "Sarah Pinsker",
+            "poster": "Rectangle_13.png",
+            "price": 500,
+            "rating": 0,
+            "wantToRead": false
+        },
+        {
+            "id": "9",
+            "title": "Sorrowland",
+            "author": "Rivers Solomon",
+            "poster": "Rectangle_14.png",
+            "price": 500,
+            "rating": 0,
+            "wantToRead": false
+        },
+        {
+            "id": "10",
+            "title": "Day Zero",
+            "author": "Robert Cargill",
+            "poster": "Rectangle_15.png",
+            "price": 500,
+            "rating": 0,
+            "wantToRead": false
+        },
+        {
+            "id": "11",
+            "title": "Local Woman Missing",
+            "author": "Mary Kubica",
+            "poster": "Rectangle_16.png",
+            "price": 500,
+            "rating": 0,
+            "wantToRead": false
+        },
+        {
+            "id": "12",
+            "title": "You're Invited",
+            "author": "Jon Levy",
+            "poster": "Rectangle_17.png",
+            "price": 500,
+            "rating": 0,
+            "wantToRead": false
+        }
+    ]
+}
