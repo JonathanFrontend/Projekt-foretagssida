@@ -6,9 +6,13 @@ import arrowDown from '../components/arrow-down.svg'
 
 
 
+
 function Header() {
 
     let [meny, setMeny] = useState(true);
+    let [lang, setLang] = useState('SV');
+
+
 
 
     console.log(meny)
@@ -24,6 +28,7 @@ function Header() {
 
             <section className="nav_menu">
                 <ul>
+                    <Link to="/news" className="nav_link">Nyheter</Link>
                     <Link to="/about" className="nav_link">Om oss</Link>
                     <Link to="/faq" className="nav_link">Vanliga frågor</Link>
                     <Link to="/contact" className="nav_link">Kontakt</Link>
@@ -34,7 +39,7 @@ function Header() {
             <section className="nav_buttons">
                 {meny ?
                     <div className="one">
-                        <p className="first_btn">SV</p>
+                        <p className="first_btn">{lang}</p>
                         <button onClick={() => setMeny(!meny)} className="arrow_down">
                             <img className="arrow_size" src={arrowDown} alt="arrow_down" />
                         </button>
@@ -42,13 +47,17 @@ function Header() {
                     :
                     <section>
                         <div className="one">
-                            <p className="first_btn">SV</p>
-                            <button onClick={() => setMeny(!meny)} className="arrow_down">
+                            <p id="swe" className="first_btn">{lang}</p>
+                            <button onClick={() => setMeny(!meny)}
+                                className="arrow_down">
                                 <img className="arrow_size" src={arrowDown} alt="arrow_down" />
                             </button>
                         </div>
 
-                        <button className="hidden two">EN</button>
+                        <button
+                            onClick={() => setLang('new')}
+                            className="hidden two"
+                        >{lang}</button>
 
 
                     </section>
