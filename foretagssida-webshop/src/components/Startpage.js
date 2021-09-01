@@ -35,8 +35,15 @@ function Startpage(){
                             books.popularBooks.map(book => <Book book={book}/>)
                         }
                     </article>
+                </div>
+                <div className='main-contents-middle'>
+                    <h2 className="title">Newly released</h2>
+                </div>
+                <div className="bookshelf">
                     <article className="shelf">
-                        
+                        {
+                            books.newBooks.map(book => <Book book={book}/>)
+                        }
                     </article>
                 </div>
             </section>
