@@ -15,7 +15,7 @@ function Header() {
 
 
 
-    console.log(meny)
+
     return (
         <nav className="nav_bar">
 
@@ -55,9 +55,9 @@ function Header() {
                         </div>
 
                         <button
-                            onClick={() => setLang('new')}
+                            onClick={() => setLang('EN')}
                             className="hidden two"
-                        >{lang}</button>
+                        >mandus</button>
 
 
                     </section>
