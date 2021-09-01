@@ -12,8 +12,12 @@ function App() {
         <Switch>
           <Redirect exact path="/" to="/startpage" />
           <Route path="/startpage" component={Startpage} />
+<<<<<<< Updated upstream
+=======
+          <Route path="/contact" component={Kontakt} />
+          {/* 
+>>>>>>> Stashed changes
           <Route path="/about" component={About} />
-          {/* <Route path="/contact" component={Contact} />
           <Route component={ErrorPage} />  */}
           
         </Switch>
