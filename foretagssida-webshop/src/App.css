@@ -49,17 +49,32 @@
   display: flex;
   align-items: center;
   padding-left: 2rem;
-  background: url("./img/header.png") no-repeat;
+  background: url("./images/header.png") no-repeat;
   height: 242px;
   width: 100%;
   
 }
-.header-text{
+.header-text {
   font-size: 3rem;
   color:#FFFFFF;
 }
 .description-content{
   padding: 3rem;
+}
+
+.about-img{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  background: url("./images/MicrosoftTeams-image\ \(3\).png") no-repeat;
+  height: 387px;
+  width: 100%;
+  left: 84px;
+}
+.about-img-text{
+  font-size: 3rem;
+  color:#FFFFFF;
+  padding-top: 3rem;
 }
 
 .personal-content{

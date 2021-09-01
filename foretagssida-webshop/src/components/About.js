@@ -12,6 +12,9 @@ function About() {
                     <h3 className="about-h3">Företagsmotto</h3>
                     <h2 className="about-h2"> När du läser en bra bok då händer alltid nåt magiskt!</h2> 
                     <p className="about-p">Vi erbjuder klassiska böcker, tidsskrifter och ljudböcker till ett förmånligt pris.</p> 
+                    <div className="about-img">
+                        <h1 className="about-img-text">NO LIMIT</h1>
+                    </div>
                     <h3 className="about-h3">Medarbetare</h3>
                 <div className="personal-content">
                     {Staff.personal.map((staff, key) => <div className="personal-card" key={key}> 
