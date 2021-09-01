@@ -135,7 +135,7 @@
 footer{
   background: #000000;
   height: 480px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -209,6 +209,7 @@ footer p{
   font-size: 1.375rem;
   color: #FFFFFF;
   font-weight: 500;
+  line-height: 2rem;
 }
 .btn {
   background-color: #BA3FCA;
@@ -230,6 +231,11 @@ footer p{
   width: 100%;
   margin-bottom: 1.5rem;
 }
+.main-contents-middle {
+  width: 100%;
+  margin-top: 7.8125rem;
+  margin-bottom: 1.5rem;
+}
   .title {
     font-weight: bold;
     font-size: 36px;
@@ -242,9 +248,12 @@ footer p{
 }
 .book-container {
   position: relative;
-  width: 190px;
+  width: 191px;
   min-height: 385px;
 }
+  .book-container div {
+    width: 100%;
+  }
 .check {
   position: absolute;
   top: 0;
@@ -287,6 +296,53 @@ footer p{
   background-position: center;
   background-size: cover;
 }
+  .rating-box{
+    margin-top: .3rem;
+  }
+    .rating-box h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      color: #FFA500;
+    }
+  .title-box{
+    margin-top: .3rem;
+  }
+    .title-box h3 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+      color: #000000;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  .author-box{
+    margin-top: 0.1rem;
+  }
+    .author-box h3 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      color: #757575;
+    }
+  .price-box{
+    margin-top: .4rem;
+  }
+    .price-box h3 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      color: #000000;
+    }
+  .buy-box{
+    margin-top: 1rem;
+  }
 .buy-btn {
   background-color: #8D179C;
   padding: 0.625rem 2.6875rem;
@@ -333,7 +389,6 @@ footer p{
   background-size: cover;
   height: 242px;
   width: 100%;
-  
 }
 .header-text {
   font-size: 3rem;
@@ -375,7 +430,6 @@ footer p{
   border-radius: 50%;
 }
 .about-text{
-  
   display: flex;
   flex-direction: column;
   height: 50%;

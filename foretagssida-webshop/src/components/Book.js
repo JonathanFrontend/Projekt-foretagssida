@@ -5,6 +5,10 @@ function Book(props){
     console.log(props);
     const [wantToRead, setWantToRead] = useState(props.book.wantToRead);
     let typeOfCheck = wantToRead ? "green-check" : "black-check";
+    const rating = props.book.rating;
+    const title = props.book.title;
+    const author = props.book.author;
+    const price = props.book.price;
     return (
         <aside className="book-container" key={props.book.id}>
             <span className={"check " + typeOfCheck} onClick={() => setWantToRead(!wantToRead)}>
@@ -14,27 +18,28 @@ function Book(props){
             <div className="book-poster" style={{backgroundImage: `url("/images/${props.book.poster}")`}}>
 
             </div>
-            <div>
+            {rating ? 
+            <div className="rating-box">
                 <h3>
-                    {props.book.rating}
+                    {rating} <i class="fas fa-star"></i>
+                </h3>
+            </div> : ""}
+            <div className="title-box">
+                <h3>
+                    {title}
                 </h3>
             </div>
-            <div>
+            <div className="author-box">
                 <h3>
-                    {props.book.title}
+                    {author}
                 </h3>
             </div>
-            <div>
+            <div className="price-box">
                 <h3>
-                    {props.book.author}
+                    {price}Kr
                 </h3>
             </div>
-            <div>
-                <h3>
-                    {props.book.price}
-                </h3>
-            </div>
-            <div>
+            <div className="buy-box">
                 <button className="buy-btn">
                     Köp
                 </button>
