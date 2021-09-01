@@ -3,19 +3,15 @@ import Staff from "../data/personal.json"
 
 function About() {
         
-   
-       
-       console.log(Staff.personal);
-        
    return (
         <div className="personal-container">
             <div className="header-img">
                 <h1 className="header-text">Om oss</h1>
             </div>
-                <div className="desc-content">
+                <div className="description-content">
                     <h3 className="about-h3">Företagsmotto</h3>
                     <h2 className="about-h2"> När du läser en bra bok då händer alltid nåt magiskt!</h2> 
-                    <p className="about-p">Vi erbjuder klassiska böcker, tidsskrifter, ljudböcker och filmer till ett förmånligt pris.</p> 
+                    <p className="about-p">Vi erbjuder klassiska böcker, tidsskrifter och ljudböcker till ett förmånligt pris.</p> 
                     <h3 className="about-h3">Medarbetare</h3>
                 <div className="personal-content">
                     {Staff.personal.map((staff, key) => <div className="personal-card" key={key}> 

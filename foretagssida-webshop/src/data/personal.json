@@ -5,14 +5,14 @@
         "img": "girl1.png",
         "role" : "administratör",
         "alt_text":"Jackie face",
-        "mail":"jackie@bok.com"
+        "mail":"jackie@bookstore.com"
       },
       {
         "name": "Hugo",
         "img": "man1.png",
         "role" : "projekt ledare",
         "alt_text":"Hugo face",
-        "mail":"hugo@bok.com"
+        "mail":"hugo@bookstore.com"
       },
       
       {
@@ -20,21 +20,21 @@
         "img": "girl2.png",
         "role" : "kundservice",
         "alt_text":"Paula face",
-        "mail":"paulo@bok.com"
+        "mail":"paulo@bookstore.com"
       },
       {
         "name": "Peter",
         "img": "man2.png",
         "role" : "tekniks support",
         "alt_text":"Peter face",
-        "mail":"peter@bok.com"
+        "mail":"peter@bookstore.com"
       },
       {
         "name": "Jane",
         "img": "girl3.png",
         "role" : "markands chef",
         "alt_text":"Jane face",
-        "mail":"jane@bok.com"
+        "mail":"jane@bookstore.com"
       },
       
       {
@@ -42,21 +42,21 @@
         "img": "man3.png",
         "role" : "administratör",
         "alt_text":"Ola face",
-        "mail":"ola@bok.com"
+        "mail":"ola@bookstore.com"
       },
       {
         "name": "Pia",
         "img": "girl4.png",
         "role" : "administratör",
         "alt_text":"Pia face",
-        "mail":"pia@bok.com"
+        "mail":"pia@bookstore.com"
       },
       {
         "name": "Zach",
         "img": "man4.png",
         "role" : "tekinks support",
         "alt_text":"Zack face",
-        "mail":"zach@bok.com"
+        "mail":"zach@bookstore.com"
       }
     ]
   }
