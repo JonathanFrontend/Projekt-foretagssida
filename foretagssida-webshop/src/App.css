@@ -6,7 +6,6 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
 } 
 
 /* Johannes - Header*/
@@ -443,9 +442,7 @@ footer p{
   padding: 5px;
 }
 
-<<<<<<< Updated upstream
-/* Kontakt */
-=======
+
 /* Tariq - Kontakt */
 
 .kontakt-container{
@@ -575,4 +572,3 @@ padding-left: 1.5rem;
 }
 
 
->>>>>>> Stashed changes

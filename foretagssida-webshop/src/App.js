@@ -4,6 +4,7 @@ import Startpage from './components/Startpage'
 import Header from './components/Header';
 import Footer from './components/Footer'
 import About from './components/About';
+import Kontakt from './components/Kontakt';
 function App() {
   return (
     <div>
@@ -12,12 +13,9 @@ function App() {
         <Switch>
           <Redirect exact path="/" to="/startpage" />
           <Route path="/startpage" component={Startpage} />
-<<<<<<< Updated upstream
-=======
           <Route path="/contact" component={Kontakt} />
-          {/* 
->>>>>>> Stashed changes
           <Route path="/about" component={About} />
+          {/* 
           <Route component={ErrorPage} />  */}
           
         </Switch>
