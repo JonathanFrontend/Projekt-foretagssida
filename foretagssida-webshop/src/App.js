@@ -4,6 +4,7 @@ import Startpage from './components/Startpage'
 import Header from './components/Header';
 import Footer from './components/Footer'
 import About from './components/About';
+import News from './components/News';
 function App() {
   return (
     <div>
@@ -13,8 +14,9 @@ function App() {
           <Redirect exact path="/" to="/startpage" />
           <Route path="/startpage" component={Startpage} />
           <Route path="/about" component={About} />
-          {/* <Route path="/contact" component={Contact} />
-          <Route component={ErrorPage} />  */}
+          {/* <Route path="/contact" component={Contact} /> */}
+          <Route path="/news" component={News} />
+          {/* <Route component={ErrorPage} />  */}
           
         </Switch>
 

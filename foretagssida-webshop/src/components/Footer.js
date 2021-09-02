@@ -22,7 +22,7 @@ export default function Footer() {
                     <p>Snabblänkar</p>
                     <a className="footerLinks" href="/startpage">Startsida</a>
                     <a className="footerLinks" href="/about">Om oss</a>
-                    <a className="footerLinks" href="/articles">Nyheter/Artiklar</a>
+                    <a className="footerLinks" href="/news">Nyheter/Artiklar</a>
                     <a className="footerLinks" href="/faq">Vanliga Frågor</a>
                     <a className="footerLinks" href="/contact">Kontakt</a>
                     {/* <a className="footerLinks" href="/en">EN</a> */}

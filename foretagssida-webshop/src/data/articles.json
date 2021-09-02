@@ -1,0 +1,50 @@
+    [
+        {
+            "headline": "Mandus säljer sin bok hos oss",
+            "author": "Mandus",
+            "date" : "20210101",
+            "label":"news"
+          },
+        {
+            "headline": "Hans säljer sin bok hos oss",
+            "author": "Hans",
+            "date" : "19020101",
+            "label":"news"
+          },
+        {
+            "headline": "Filip säljer sin bok hos oss",
+            "author": "Filip",
+            "date" : "20180101",
+            "label":"news"
+          },
+        {
+            "headline": "Jon säljer sin bok hos oss",
+            "author": "Jon",
+            "date" : "20180101",
+            "label":"news"
+          },
+        {
+            "headline": "Bookstore blir AB",
+            "author": "Per",
+            "date" : "20180101",
+            "label":"articles"
+          },
+        {
+            "headline": "Bookstore blir ångrar sig och säljer till Amazon",
+            "author": "Per",
+            "date" : "20180103",
+            "label":"articles"
+          },
+        {
+            "headline": "Bookstore och Boonier fakta slår sina påsar ihop",
+            "author": "Olle",
+            "date" : "20030101",
+            "label":"articles"
+          },
+        {
+            "headline": "Sverige sura på Bookstore",
+            "author": "Olle",
+            "date" : "20020101",
+            "label":"articles"
+          }
+    ]
