@@ -19,8 +19,7 @@ function Kontakt() {
         <section className="section-spacing">
           <h1 className="headingtext primary">Kontakta Bookstore</h1>
           <p className="bodytext">
-            Varmt välkommen att kontakta Bookstore. Här hittar du vanliga frågor
-            och svar samt information om våra kontaktvägar.
+          Har du en idé eller funderning som du vill utforska tillsammans med oss? Vad kul – då vill vi gärna höra mer..
           </p>
         </section>
         <section className="section-spacing">
