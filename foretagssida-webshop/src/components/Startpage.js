@@ -1,23 +1,39 @@
 import React, { Suspense } from 'react';
 import Book from './Book'
 import books from '../books.json';
-import { useTranslation } from 'react-i18next';
+import lang from '../lang.json';
+import { useSelector, useDispatch } from 'react-redux';
 
 function Startpage(){
-    const { t, i18n } = useTranslation();
+    //const { t, i18n } = useTranslation();
+    let stateLang = useSelector(state => {
+        return state.lang
+    });
+    let dispatch = useDispatch();
+    console.log('State Lang:', stateLang);
+    const text = () => {
+        switch(stateLang) {
+            case 'en':
+                return lang.en;
+            case 'sv':
+                return lang.sv;
+            default:
+                return lang.sv;
+        }
+    };
+    
     return (
         <main className='wrapper'>
             <div className='hero'>
                 <div className='hero-contents'>
                     <div className="hero-box hero-box-1">
                         <h1 className="hero-title">
-                        Something magical will happen when you read a good book.
+                        { text().titleInHero }
                         </h1>
                     </div>
                     <div className="hero-box hero-box-2">
                         <p className="hero-text">
-                        Bookplace helps you keep track of your reading,
-                        & meet some new friends along the way.
+                        { text().textInHero }
                         </p>
                     </div>
                     <div className="hero-box hero-box-3">
