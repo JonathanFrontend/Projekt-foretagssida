@@ -3,6 +3,12 @@ import Staff from "../data/personal.json"
 import { useSelector, useDispatch } from 'react-redux';
 function About() {
         
+    let stateLang = useSelector(state => {
+        return state.lang
+        console.log(stateLang);
+
+
+
    return (
         <div className="personal-container">
             <div className="header-img">
