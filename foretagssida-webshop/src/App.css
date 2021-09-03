@@ -251,7 +251,7 @@ footer p{
   width: 191px;
   min-height: 385px;
 }
-  .book-container div {
+  .book-container > div {
     width: 100%;
   }
 .check {
