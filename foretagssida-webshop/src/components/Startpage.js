@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Book from './Book'
 import books from '../books.json';
+import { useTranslation } from 'react-i18next';
 
 function Startpage(){
+    const { t, i18n } = useTranslation();
     return (
         <main className='wrapper'>
             <div className='hero'>
