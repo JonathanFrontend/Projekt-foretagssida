@@ -5,8 +5,9 @@ function About() {
         
     let stateLang = useSelector(state => {
         return state.lang
-        console.log(stateLang);
 
+    });
+        console.log(stateLang);
 
 
    return (
