@@ -4,12 +4,38 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom';
+import {createStore} from 'redux';
+import {Provider} from 'react-redux';
+
+
+const initialState = {
+  lang: 'sv'
+}
+
+function reducer(state = initialState, action) {
+  switch (action.type) {
+    case "sv":
+      return {
+        lang: 'sv'
+      };
+    case "en":
+      return {
+        lang: 'en'
+      };
+    default:
+      return state;
+  }
+}
+
+const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 ReactDOM.render(
   <React.StrictMode>
+  <Provider store={store}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

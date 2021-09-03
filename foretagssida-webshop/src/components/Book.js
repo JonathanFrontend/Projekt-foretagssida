@@ -12,7 +12,7 @@ function Book(props){
     return (
         <aside className="book-container" key={props.book.id}>
             <span className={"check " + typeOfCheck} onClick={() => setWantToRead(!wantToRead)}>
-            {wantToRead ? <i class="fas fa-check"></i> : <i class="fas fa-plus"></i>}
+            {wantToRead ? <i className="fas fa-check"></i> : <i className="fas fa-plus"></i>}
             </span>
             {/* <img src={`/images/${props.book.poster}`} alt="{props.book.title}" className="book-image"/> */}
             <div className="book-poster" style={{backgroundImage: `url("/images/${props.book.poster}")`}}>
@@ -21,7 +21,7 @@ function Book(props){
             {rating ? 
             <div className="rating-box">
                 <h3>
-                    {rating} <i class="fas fa-star"></i>
+                    {rating} <i className="fas fa-star"></i>
                 </h3>
             </div> : ""}
             <div className="title-box">
