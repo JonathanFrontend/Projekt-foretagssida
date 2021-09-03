@@ -1,12 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
 } 
 
 /* Johannes - Header*/
@@ -470,8 +470,177 @@ footer p{
 .personal-card{
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   padding: 5px;
 }
 
-/* Kontakt */
+/* Tariq - Kontakt */
+
+.app-container{
+  padding: 4.25rem 5rem;
+}
+.section-spacing{
+  padding: 4.25rem 0;
+}
+.header-img{
+  display: flex;
+  align-items: center;
+  padding-left: 5rem;
+  background: url("./images/header.png") no-repeat;
+  background-size: cover;
+  height: 242px;
+  width: 100%;
+}
+
+.header-text{
+  font-size: 3rem;
+  color:#FFFFFF;
+}
+
+.company-image-container{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.company-image{
+  width: 100%;
+}
+.headingtext{
+  font-size: 3rem;
+  padding-bottom: 3rem;
+}
+.primary{
+  color: #BA3FCA;
+}
+
+.bodytext{
+  font-size: 2.25rem;
+}
+
+.kontakt-items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FAF9F7;
+  margin-bottom: 1rem;
+  height: 136px;
+  padding: 0 8rem;
+}
+
+.kontakt-left{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.kontakt-left-content{
+  font-size: .5rem;
+padding-left: 1.5rem;
+}
+
+.kontakt-left-content h4{
+  font-size: 2rem;
+}
+
+.kontakt-desc{
+  font-size: 1rem;
+  color: #A6A6A6;
+}
+
+.info-text{
+  font-size: 1.5rem;
+}
+
+.link-info{
+  font-size: 1.5rem;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+}
+.form-text-label{
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.form-text-input{
+  padding: 2rem 1rem;
+  border: 1px solid #A6A6A6;
+  font-size: 2em;
+}
+
+.form-text-input:focus{
+  outline: none;
+}
+
+.form-select{
+  margin: 1rem 0;
+  padding: 2rem 1rem;
+  background-color: none;
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;       /* Remove default arrow */
+   background: url("./images/arrow.png") no-repeat;
+   background-position: bottom 50% right 50px;
+}
+
+.form-select option{
+  padding: 1rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.btn-form{
+  border: none;
+  padding: 1rem;
+  width: 200px;
+  background-color: #BA3FCA;
+  color: #FAF9F7;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+
+/* Faq - Tariq */
+
+
+.faq-accordion {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.faq-question{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #757575;
+  cursor: pointer;
+  background-color: #F9F1FA;
+  }
+
+  .faq-icon{
+    font-size: 2rem;
+    display: block;
+    padding: .5rem;
+  }
+
+  .faq-answer{
+    padding: 2rem 1rem;
+    transition: all 200ms ease-out;
+  }
+  
+  .show{
+    display: block;
+  }
+
+  .hide{
+    display: none;
+  }
+
+ 
+/*     /////////////////////////////////////////////////////////////////////      */

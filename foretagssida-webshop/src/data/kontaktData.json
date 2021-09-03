@@ -1,0 +1,33 @@
+{
+    "kontakt": [
+      {
+        "way": "Ringa oss",
+        "desc": "Mån-fre: 08.30-17.00",
+        "icon": "phone",
+        "info" : "010 4845485 - 072 125485",
+        "link" : ""
+      },
+      {
+        "way": "Maila oss",
+        "desc": "",
+        "icon": "@",
+        "info" : "info@bookstore.se",
+        "link" : ""
+      },
+      {
+        "way": "Besök huvudkontoret",
+        "desc": "Storgatan 100, 554 51 Stad",
+        "icon": "building",
+        "info" : "Visa Karta",
+        "link" : "https://map.google.com"
+      },
+      {
+        "way": "Besök ett regionkontor",
+        "desc": "",
+        "icon": "map",
+        "info" : "Hitta regionkontor",
+        "link" : "https://map.google.com"
+      }
+   
+    ]
+  }
