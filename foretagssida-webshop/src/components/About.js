@@ -1,6 +1,6 @@
 import {React} from 'react';
 import Staff from "../data/personal.json"
-
+import { useSelector, useDispatch } from 'react-redux';
 function About() {
         
    return (
