@@ -1,15 +1,26 @@
 import {React} from 'react';
-import Staff from "../data/personal.json"
+import lang from "../lang.json"
 import { useSelector, useDispatch } from 'react-redux';
 function About() {
     
-
-    let dispatch = useDispatch();
     let stateLang = useSelector(state => {
         return state.lang
-
     });
+
+    let dispatch = useDispatch();
+    console.log('State Lang:', stateLang);
+    const text = () => {
+        switch(stateLang) {
+            case 'en':
+                return lang.en;
+            case 'sv':
+                return lang.sv;
+            default:
+                return lang.sv;
+        }
+    };
         console.log(stateLang);
+       
 
 
    return (
@@ -24,8 +35,8 @@ function About() {
                     <div className="about-img"></div>
                     <h3 className="about-h3">Medarbetare</h3>
                 <div className="personal-content">
-                    {Staff.personal.map((staff, key) => <div className="personal-card" key={key}> 
-                    <img className="image"src={`/images/${staff.img}`} alt={staff.alt_text}/> 
+                    {lang.personal.map((staff, key) =><div className="personal-card" key={key}> 
+                    <img className="image"src={`/images/${staff.img}`} alt={text().staff.alt_text}/> 
                         <div className="about-text">
                             <h2>{staff.name}</h2>
                             <h4>{staff.role}</h4>
