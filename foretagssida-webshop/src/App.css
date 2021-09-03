@@ -448,6 +448,7 @@ footer p{
 
 .newsButtonBox {
   border: 1px solid black;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -474,6 +475,7 @@ footer p{
 
 .articleButtonBox {
   border: 1px solid black;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

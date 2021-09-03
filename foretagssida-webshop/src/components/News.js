@@ -114,8 +114,8 @@ export default function News() {
                             <h6 className="contentHeadline">{data.headline}</h6>
                             <div className="miniContent">
                                 <p>{data.date}</p>
-                                <p>Författare: {data.author}</p>
-                                <p>Inlägg: {data.label}</p>
+                                <p>Författare - {data.author}</p>
+                                <p>Typ -  {data.label}</p>
                             </div>
                         </div>
                     )}
