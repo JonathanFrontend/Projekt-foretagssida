@@ -38,14 +38,14 @@ function Startpage(){
                     </div>
                     <div className="hero-box hero-box-3">
                         <button className="btn">
-                            Get started
+                        { text().btnInHero }
                         </button>
                     </div>
                 </div>
             </div>
             <section className='main-contents'>
                 <div className='main-contents-top'>
-                    <h2 className="title">Popular books</h2>
+                    <h2 className="title">{ text().titleInMain }</h2>
                 </div>
                 <div className="bookshelf">
                     <article className="shelf">
@@ -55,7 +55,7 @@ function Startpage(){
                     </article>
                 </div>
                 <div className='main-contents-middle'>
-                    <h2 className="title">Newly released</h2>
+                    <h2 className="title">{ text().newlyReleased }</h2>
                 </div>
                 <div className="bookshelf">
                     <article className="shelf">
