@@ -5,6 +5,7 @@ import Kontakt from './components/Kontakt';
 import Header from './components/Header';
 import Footer from './components/Footer'
 import About from './components/About';
+import Faq from './components/Faq';
 function App() {
   return (
     <div>
@@ -14,6 +15,7 @@ function App() {
           <Route path="/startpage" component={Startpage} />
           <Route path="/contact" component={Kontakt} />
           <Route path="/about" component={About} />
+          <Route path="/faq" component={Faq} />
           {/* 
           <Route component={ErrorPage} />  */}
           
