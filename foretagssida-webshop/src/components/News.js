@@ -62,7 +62,7 @@ export default function News() {
                         <div className="newsArrow">
                             <p>Filtrera</p>
                             <button className="arrow_down" onClick={() => setAddFilter(!addFilter)}>
-                                <img className="arrow_size arrowColor" src={arrowDown} alt="arrow_down" />
+                                <img className="arrow_size" src={arrowDown} alt="arrow_down" />
                             </button>
                         </div>
                         {addFilter ?
