@@ -325,7 +325,7 @@ footer p{
 .header-img{
   display: flex;
   align-items: center;
-  padding-left: 2rem;
+  padding-left: 75px;
   background: url("./images/header.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -384,3 +384,65 @@ footer p{
 }
 
 /* Kontakt */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* News  */
+
+.newsWrapper{
+  padding: 107px 75px
+}
+
+.newsH2{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  color: #BA3FCA;
+}
+
+.newsBoxforFilterandSort{
+  display: flex;
+  justify-content: space-between;
+}
+
+.newsBoxFilter{
+  font-size: 16px;
+  line-height: 19px;
+  width: 97px;
+  height: 44px;
+  border-radius: 5px;
+  border: rgba(186, 63, 202, 1) 1px solid;
+  color: rgba(186, 63, 202, 1);
+}
+.newsArrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.arrowColor{
+  color: rgba(186, 63, 202, 1);
+}
