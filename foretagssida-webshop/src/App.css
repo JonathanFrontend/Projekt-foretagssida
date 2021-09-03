@@ -439,13 +439,13 @@ footer p{
 .personal-card{
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   padding: 5px;
 }
 
 /* Tariq - Kontakt */
 
-.kontakt-container{
+.app-container{
   padding: 4.25rem 5rem;
 }
 .section-spacing{
@@ -484,10 +484,6 @@ footer p{
 
 .bodytext{
   font-size: 2.25rem;
-}
-
-.kontakt-list{
-  
 }
 
 .kontakt-items{
@@ -578,3 +574,42 @@ padding-left: 1.5rem;
 }
 
 
+/* Faq - Tariq */
+
+
+.faq-accordion {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.faq-question{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #757575;
+  cursor: pointer;
+  background-color: #F9F1FA;
+  }
+
+  .faq-icon{
+    font-size: 2rem;
+    display: block;
+    padding: .5rem;
+  }
+
+  .faq-answer{
+    padding: 2rem 1rem;
+    transition: all 200ms ease-out;
+  }
+  
+  .show{
+    display: block;
+  }
+
+  .hide{
+    display: none;
+  }
+
+ 
+/*     /////////////////////////////////////////////////////////////////////      */

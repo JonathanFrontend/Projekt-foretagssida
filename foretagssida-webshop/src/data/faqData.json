@@ -1,0 +1,33 @@
+{
+    "questionsList": [
+      {
+        "question": "När får jag min bok?",
+        "answer": "I den orderbekräftelse du har fått från oss via mejl, kan du lätt räkna ut total leveranstid, genom att lägga ihop vår hanteringstid, ”Skickas inom”, med frakttiden. Är leveransen försenad mot utlovad tid får du ett meddelande från oss."
+        
+      },
+      {
+        "question": "Ångra ett köp",
+        "answer": "Du har rätt att ångra ett köp inom 14 dagar efter det att du tog emot din leverans. Använd den följesedel du fick med böckerna och följ instruktionerna för retur."
+        
+      },
+      {
+        "question": "Undrar du över din betalning?",
+        "answer": "Alla frågor om betalning besvaras av vår betalpartner Klarna."
+        
+      },
+      {
+        "question": "Var är min bok?",
+        "answer": "Följ din beställning I den orderbekräftelse du får finns det en länk där du lätt kan följa hur din beställning uppdateras. Du kan se vad som finns på lager, vad som är på väg in, vad som inte finns, vad som avbeställts, och när beställningen är klar och på väg."
+      },
+      {
+        "question": "Vad kostar frakten?",
+        "answer": "Vi erbjuder följande fraktalternativ i kassan: Instabox Paketskåp Kostnad 25 kr Tid 1-2 vardagar Fraktalternativet Paketskåp kommer att vara synligt i kassan, om Instabox har skåp där du bor. "
+      },
+      {
+        "question": "Köpa presentkort på Bokus",
+        "answer": "Våra presentkort finns i valörerna 100, 200, 300, 400 och 500 kr. Presentkorten är giltiga i 1 år från inköpsdatum. De kan skickas som e-post eller för att skrivas ut på egen skrivare. Du kan skriva en hälsning på max 100 tecken."
+      }
+      
+     
+    ]
+  }

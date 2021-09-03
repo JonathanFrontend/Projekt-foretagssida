@@ -1,6 +1,6 @@
 import { React } from "react";
 import companyImage from "../images/company.png";
-import kontaktInfo from "../data/kontakt.json";
+import kontaktData from "../data/kontaktData.json";
 
 function Kontakt() {
   return (
@@ -8,7 +8,7 @@ function Kontakt() {
       <div className="header-img">
         <h1 className="header-text">Kontakta oss</h1>
       </div>
-      <div className="kontakt-container">
+      <div className="app-container">
         <div className="company-image-container">
           <img
             className="company-image"
@@ -25,26 +25,27 @@ function Kontakt() {
         </section>
         <section className="section-spacing">
           <ul className="kontakt-list">
-            {kontaktInfo.kontakt.map((kontaktInfo, key) => (
+            {kontaktData.kontakt.map((item, key) => (
               <li className="kontakt-items">
                 <div className="kontakt-left">
-                  <img src={`/images/${kontaktInfo.icon}.png`} />
+                  <img src={`/images/${item.icon}.png`} alt="kontakt icon" />
                   <div className="kontakt-left-content">
-                    <h4>{kontaktInfo.way}</h4>
-                    <span className="kontakt-desc">{kontaktInfo.desc}</span>
+                    <h4>{item.way}</h4>
+                    <span className="kontakt-desc">{item.desc}</span>
                   </div>
                 </div>
                 <div>
                   <p className="info-text">
-                    {kontaktInfo.link === "" ? (
-                      kontaktInfo.info
+                    {item.link === "" ? (
+                      item.info
                     ) : (
                       <a
                         className="link-info"
-                        href={`${kontaktInfo.link}`}
+                        href={`${item.link}`}
                         target="_blank"
+                        rel="noreferrer"
                       >
-                        {kontaktInfo.info}
+                        {item.info}
                       </a>
                     )}
                   </p>
