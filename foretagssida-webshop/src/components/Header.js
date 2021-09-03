@@ -4,15 +4,19 @@ import logo from '../components/Vector.png'
 
 import arrowDown from '../components/arrow-down.svg'
 
+import { useDispatch, useSelector } from 'react-redux';
 
 
 
 function Header() {
 
     let [meny, setMeny] = useState(true);
-    let [lang, setLang] = useState('SV');
-
-
+    let [lang, setLang] = useState(['sv', 'en']);
+    let stateLang = useSelector(state => {
+        return state.lang
+    });
+    let dispatch = useDispatch();
+    console.log('State Lang:', stateLang);
 
 
 
@@ -39,7 +43,7 @@ function Header() {
             <section className="nav_buttons">
                 {meny ?
                     <div className="one">
-                        <p className="first_btn">{lang}</p>
+                        <p className="first_btn">{lang[0]}</p>
                         <button onClick={() => setMeny(!meny)} className="arrow_down">
                             <img className="arrow_size" src={arrowDown} alt="arrow_down" />
                         </button>
@@ -47,7 +51,7 @@ function Header() {
                     :
                     <section>
                         <div className="one">
-                            <p id="swe" className="first_btn">{lang}</p>
+                            <p id="swe" className="first_btn">{lang[0]}</p>
                             <button onClick={() => setMeny(!meny)}
                                 className="arrow_down">
                                 <img className="arrow_size" src={arrowDown} alt="arrow_down" />
@@ -55,25 +59,17 @@ function Header() {
                         </div>
 
                         <button
-                            onClick={() => setLang('EN')}
+                            onClick={() => {
+                                dispatch({type: lang[1]});
+                                setLang(lang.reverse());
+                            }}
                             className="hidden two"
-                        >mandus</button>
-
-
-                    </section>
+                        >{lang[1]}</button>
+            </section>      
                 }
 
-
-
-
-
-
             </section>
-
-
-
-
-        </nav>
+    </nav>
 
 
 
