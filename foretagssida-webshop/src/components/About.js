@@ -1,6 +1,5 @@
 import {React} from 'react';
 import Staff from "../data/personal.json"
-
 function About() {
         
    return (
