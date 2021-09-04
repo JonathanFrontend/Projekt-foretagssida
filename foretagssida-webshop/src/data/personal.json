@@ -1,4 +1,10 @@
 { "sv" : {
+    "aboutText" :{
+      "headerText": "Om oss",
+      "mottoText": "Företagsmotto",
+      "aboutHeadingText": "När du läser en bra bok då händer alltid nåt magiskt!",
+      "aboutPText": "Vi erbjuder klassiska böcker, tidsskrifter och ljudböcker till ett förmånligt pris."
+    },
     "personalInfo": [
       {
         "name": "Jackie",
@@ -32,7 +38,7 @@
       {
         "name": "Jane",
         "img": "girl3.png",
-        "role" : "markands chef",
+        "role" : "VD",
         "alt_text":"Jane face",
         "mail":"jane@bookstore.com"
       },
@@ -59,4 +65,73 @@
         "mail":"zach@bookstore.com"
       }
     ]
-  }}
+  },
+    "en" : {
+      "aboutText" :{
+        "headerText": "About Us",
+        "mottoText": "Company motto",
+        "aboutHeadingText": "When you read a good book, something magical always happens!",
+        "aboutPText":"We offer classic books, magazines and audio books at a favorable price."
+      },
+    "personalInfo": [
+      {
+        "name": "Jackie",
+        "img": "girl1.png",
+        "role" : "Administrator",
+        "alt_text":"Jackie face",
+        "mail":"jackie@bookstore.com"
+      },
+      {
+        "name": "Hugo",
+        "img": "man1.png",
+        "role" : "project leader",
+        "alt_text":"Hugo face",
+        "mail":"hugo@bookstore.com"
+      },
+      
+      {
+        "name": "Paula",
+        "img": "girl2.png",
+        "role" : "Customer service",
+        "alt_text":"Paula face",
+        "mail":"paulo@bookstore.com"
+      },
+      {
+        "name": "Peter",
+        "img": "man2.png",
+        "role" : "Tech Support",
+        "alt_text":"Peter face",
+        "mail":"peter@bookstore.com"
+      },
+      {
+        "name": "Jane",
+        "img": "girl3.png",
+        "role" : "CEO",
+        "alt_text":"Jane face",
+        "mail":"jane@bookstore.com"
+      },
+      
+      {
+        "name": "Ola",
+        "img": "man3.png",
+        "role" : "Administrator",
+        "alt_text":"Ola face",
+        "mail":"ola@bookstore.com"
+      },
+      {
+        "name": "Pia",
+        "img": "girl4.png",
+        "role" : "Administrator",
+        "alt_text":"Pia face",
+        "mail":"pia@bookstore.com"
+      },
+      {
+        "name": "Zach",
+        "img": "man4.png",
+        "role" : "Tech Support",
+        "alt_text":"Zack face",
+        "mail":"zach@bookstore.com"
+      }
+    ]
+  }
+}
