@@ -1,5 +1,5 @@
-{
-    "personal": [
+{ "sv" : {
+    "personalInfo": [
       {
         "name": "Jackie",
         "img": "girl1.png",
@@ -59,4 +59,4 @@
         "mail":"zach@bookstore.com"
       }
     ]
-  }
+  }}
