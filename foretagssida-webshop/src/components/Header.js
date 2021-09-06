@@ -8,9 +8,6 @@ import arrowDown from '../components/arrow-down.svg'
 import { useDispatch, useSelector } from 'react-redux';
 
 
-import arrowDown from "../components/arrow-down.svg";
-
-import { useDispatch, useSelector } from "react-redux";
 
 function Header() {
 
