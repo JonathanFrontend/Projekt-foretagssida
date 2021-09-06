@@ -14,17 +14,6 @@ import { useDispatch, useSelector } from "react-redux";
 
 function Header() {
 
-
-    let [meny, setMeny] = useState(true);
-    let [lang, setLang] = useState(['sv', 'en']);
-    let stateLang = useSelector(state => {
-        return state.lang
-    });
-    let dispatch = useDispatch();
-    console.log('State Lang:', stateLang);
-
-
-
     return (
         <nav className="nav_bar">
 
