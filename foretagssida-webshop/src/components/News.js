@@ -1,12 +1,25 @@
 import React, { useEffect, useState } from 'react';
 
 // Import Json file
-import articles from "../data/articles.json"
+import articlesJson from "../data/articles.json"
 
 // Import Pictures
 import arrowDownPurp from '../components/arrow-down-purp.png'
 
+import { useSelector } from 'react-redux';
+
 export default function News() {
+    let stateLang = useSelector(state => {return state.lang});
+    const text = () => {
+        switch(stateLang) {
+            case "sv":
+                return articlesJson.sv;
+            case "en":
+                return articlesJson.en;
+            default: return articlesJson.en;
+        }
+    }
+    const articles = text();
 
     let [addFilter, setAddFilter] = useState(false);
     let [addSort, setAddSort] = useState(false);
