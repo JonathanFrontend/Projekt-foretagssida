@@ -545,7 +545,29 @@ footer p{
   line-height: 56px;
   color: #BA3FCA;
 }
+  .faq-question p{
+    font-size: 1.5rem;
+  }
 
+  .faq-icon{
+    font-size: 2rem;
+    display: block;
+    padding: .5rem;
+    color: #BA3FCA;
+  }
+
+  .faq-answer{
+    padding: 2rem 3rem;
+    transition: all 200ms ease-out;
+  }
+
+  .faq-answer p{
+    font-size: 1.5rem;
+  }
+  
+  .show{
+    display: block;
+  }
 .newsBoxforFilterandSort{
   display: flex;
   justify-content: space-between;
