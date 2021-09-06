@@ -1,50 +1,102 @@
-    [
-      {
-        "headline": "Mandus släpper sin första bok någonsin, läs mer här.",
-        "author": "Mandus",
-        "date": "2021-01-01",
-        "label": "news"
-      },
-      {
-        "headline": "Ronaldo gör åtta mål på straff",
-        "author": "Hans",
-        "date": "1902-01-01",
-        "label": "news"
-      },
-      {
-        "headline": "Filip säljer sin bok hos oss",
-        "author": "Filip",
-        "date": "2018-01-01",
-        "label": "news"
-      },
-      {
-        "headline": "Jon säljer sin bok hos oss",
-        "author": "Jon",
-        "date": "2018-01-01",
-        "label": "news"
-      },
-      {
-        "headline": "Bookstore blir AB",
-        "author": "Per",
-        "date": "2018-01-01",
-        "label": "articles"
-      },
-      {
-        "headline": "Bookstore blir ångrar sig och säljer till Amazon",
-        "author": "Per",
-        "date": "2018-01-03",
-        "label": "articles"
-      },
-      {
-        "headline": "Bookstore och Boonier fakta slår sina påsar ihop",
-        "author": "Olle",
-        "date": "2003-01-01",
-        "label": "articles"
-      },
-      {
-        "headline": "Sverige sura på Bookstore",
-        "author": "Olle",
-        "date": "2002-01-01",
-        "label": "articles"
-      }
-    ]
+{
+  "sv" : [
+    {
+      "headline": "Mandus släpper sin första bok någonsin, läs mer här.",
+      "author": "Mandus",
+      "date": "2021-01-01",
+      "label": "news"
+    },
+    {
+      "headline": "Ronaldo gör åtta mål på straff",
+      "author": "Hans",
+      "date": "1902-01-01",
+      "label": "news"
+    },
+    {
+      "headline": "Filip säljer sin bok hos oss",
+      "author": "Filip",
+      "date": "2018-01-01",
+      "label": "news"
+    },
+    {
+      "headline": "Jon säljer sin bok hos oss",
+      "author": "Jon",
+      "date": "2018-01-01",
+      "label": "news"
+    },
+    {
+      "headline": "Bookstore blir AB",
+      "author": "Per",
+      "date": "2018-01-01",
+      "label": "articles"
+    },
+    {
+      "headline": "Bookstore blir ångrar sig och säljer till Amazon",
+      "author": "Per",
+      "date": "2018-01-03",
+      "label": "articles"
+    },
+    {
+      "headline": "Bookstore och Boonier fakta slår sina påsar ihop",
+      "author": "Olle",
+      "date": "2003-01-01",
+      "label": "articles"
+    },
+    {
+      "headline": "Sverige sura på Bookstore",
+      "author": "Olle",
+      "date": "2002-01-01",
+      "label": "articles"
+    }
+  ],
+  "en" : [
+    {
+      "headline": "Mandus releases his first ook, read more here.",
+      "author": "Mandus",
+      "date": "2021-01-01",
+      "label": "news"
+    },
+    {
+      "headline": "Ronaldo makes his first penalty.",
+      "author": "Hans",
+      "date": "1902-01-01",
+      "label": "news"
+    },
+    {
+      "headline": "Filip sells his book to us.",
+      "author": "Filip",
+      "date": "2018-01-01",
+      "label": "news"
+    },
+    {
+      "headline": "Jon sells his book to us.",
+      "author": "Jon",
+      "date": "2018-01-01",
+      "label": "news"
+    },
+    {
+      "headline": "Bookstore becomes LTD",
+      "author": "Per",
+      "date": "2018-01-01",
+      "label": "articles"
+    },
+    {
+      "headline": "Bookstore changes their minds and sells themselves to Amazon",
+      "author": "Per",
+      "date": "2018-01-03",
+      "label": "articles"
+    },
+    {
+      "headline": "Bookstore and Boonier becomes one",
+      "author": "Olle",
+      "date": "2003-01-01",
+      "label": "articles"
+    },
+    {
+      "headline": "Sweden angry at Bookstore",
+      "author": "Olle",
+      "date": "2002-01-01",
+      "label": "articles"
+    }
+  ]
+}

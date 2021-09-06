@@ -1,14 +1,13 @@
 import { React } from "react";
 import companyImage from "../images/company.png";
 import kontaktData from "../data/kontaktData.json";
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 function Kontakt() {
 
   let stateLang = useSelector(state => {
     return state.lang
 });
-let dispatch = useDispatch();
 
 const text = () => {
     switch(stateLang) {
