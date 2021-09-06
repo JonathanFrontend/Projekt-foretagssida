@@ -1,17 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../components/Vector.png'
-
-import arrowDown from '../components/arrow-down.svg'
+import logo from '../components/Vector.png';
+import arrowDown from '../components/arrow-down.svg';
+import { useTranslation } from 'react-i18next';
 
 function Header() {
+    const { t, i18n } = useTranslation();
 
     let [meny, setMeny] = useState(true);
     let [lang, setLang] = useState(['en', 'se']);
 
-    useEffect(()=>{
-        console.log(lang)
-    }, [lang])
+    function handleClick(l){
+        console.log(l)
+        i18n.changeLanguage(l);
+        console.log(lang);
+        const newLang = lang.reverse();
+        console.log(newLang);
+        setLang(newLang);
+    }
 
     return (
         <nav className="nav_bar">
@@ -25,10 +31,10 @@ function Header() {
 
             <section className="nav_menu">
                 <ul>
-                    <Link to="/news" className="nav_link">Nyheter</Link>
-                    <Link to="/about" className="nav_link">Om oss</Link>
-                    <Link to="/faq" className="nav_link">Vanliga frågor</Link>
-                    <Link to="/contact" className="nav_link">Kontakt</Link>
+                    <Link to="/news" className="nav_link">{t('News.1')}</Link>
+                    <Link to="/about" className="nav_link">{t('About.1')}</Link>
+                    <Link to="/faq" className="nav_link">{t('FAQ.1')}</Link>
+                    <Link to="/contact" className="nav_link">{t('Contact.1')}</Link>
                 </ul>
             </section>
 
@@ -50,12 +56,7 @@ function Header() {
                                 <img className="arrow_size" src={arrowDown} alt="arrow_down" />
                             </button>
                         </div>
-
-                        <button className="hidden two" 
-                        onClick={() => setLang(lang.reverse())}
-                        >{lang[1]}</button>
-
-
+                        <button className="hidden two" onClick={() => handleClick(lang[1])}>{lang[1]}</button>
                     </section>
                 }
 

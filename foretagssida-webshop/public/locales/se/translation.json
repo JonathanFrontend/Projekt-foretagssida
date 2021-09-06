@@ -1,0 +1,26 @@
+{
+    "News":{
+        "1": "Nyheter"
+    },
+    "About":{
+        "1": "Om oss"
+    },
+    "FAQ":{
+        "1": "Vanliga frågor"
+    },
+    "Contact":{
+        "1": "Kontakt"
+    },
+    "Hero-title":{
+        "1": "Något magiskt kommer hända om du läser en bra bok."
+    },
+    "Hero-text":{
+        "1": "Bokstället hjälper du hålla koll på din läsning & träffa nya vänner på vägen."
+    },
+    "Get-started":{
+        "1": "Börja"
+    },
+    "Popular-books":{
+        "1": "Populära böcker"
+    }
+}

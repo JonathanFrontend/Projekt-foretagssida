@@ -1,0 +1,26 @@
+{
+    "News":{
+        "1": "News"
+    },
+    "About":{
+        "1": "About"
+    },
+    "FAQ":{
+        "1": "FAQ"
+    },
+    "Contact":{
+        "1": "Contact"
+    },
+    "Hero-title":{
+        "1": "Something magical will happen when you read a good book."
+    },
+    "Hero-text":{
+        "1": "Bookplace helps you keep track of your reading, & meet some new friends along the way."
+    },
+    "Get-started":{
+        "1": "Get started"
+    },
+    "Popular-books":{
+        "1": "Popular books"
+    }
+}
