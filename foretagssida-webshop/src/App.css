@@ -533,6 +533,7 @@ footer p{
 
 /* News  */
 
+<<<<<<< HEAD
 .newsWrapper{
   padding: 107px 75px
 }
@@ -549,6 +550,8 @@ footer p{
     font-size: 1.5rem;
   }
 
+=======
+>>>>>>> parent of efb2229 (css)
   .faq-icon{
     font-size: 2rem;
     display: block;
@@ -559,10 +562,6 @@ footer p{
   .faq-answer{
     padding: 2rem 3rem;
     transition: all 200ms ease-out;
-  }
-
-  .faq-answer p{
-    font-size: 1.5rem;
   }
   
   .show{
