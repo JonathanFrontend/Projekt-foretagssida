@@ -53,7 +53,7 @@ function Header() {
                         <button
                             onClick={() => setLang('EN')}
                             className="hidden two"
-                        >mandus</button>
+                        >en</button>
 
 
                     </section>
