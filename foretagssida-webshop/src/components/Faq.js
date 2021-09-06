@@ -26,7 +26,7 @@ const Faq = () => {
        return(
               <dl key={index}>
                 <dt className="faq-question" onClick={() => toggle(index)}>
-                  <h1>{item.question}</h1>
+                  <p>{item.question}</p>
                   <span className="faq-icon">{isActive === index ? "-" : "+"}</span>
                 </dt>
                 

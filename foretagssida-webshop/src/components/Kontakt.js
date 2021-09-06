@@ -8,7 +8,6 @@ function Kontakt() {
   let stateLang = useSelector(state => {
     return state.lang
 });
-let dispatch = useDispatch();
 
 const text = () => {
     switch(stateLang) {
