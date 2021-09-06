@@ -2,6 +2,7 @@
     "aboutText" :{
       "headerText": "Om oss",
       "mottoText": "Företagsmotto",
+      "aboutH3Text" : "Medabetar",
       "aboutHeadingText": "När du läser en bra bok då händer alltid nåt magiskt!",
       "aboutPText": "Vi erbjuder klassiska böcker, tidsskrifter och ljudböcker till ett förmånligt pris."
     },
@@ -70,6 +71,7 @@
       "aboutText" :{
         "headerText": "About Us",
         "mottoText": "Company motto",
+        "aboutH3Text" : "Employee",
         "aboutHeadingText": "When you read a good book, something magical always happens!",
         "aboutPText":"We offer classic books, magazines and audio books at a favorable price."
       },

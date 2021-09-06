@@ -30,7 +30,7 @@ function About() {
                     <p className="about-p">{text().aboutText.aboutPText}</p> 
                     <div className="about-img">
                     </div>
-                    <h3 className="about-h3">Medarbetare</h3>
+                    <h3 className="about-h3">{text().aboutText.aboutH3Text}</h3>
                 <div className="personal-content">
                     {text().personalInfo.map((staff, key) => <div className="personal-card" key={key}> 
                     <img className="image"src={`/images/${staff.img}`} alt={staff.alt_text}/> 
