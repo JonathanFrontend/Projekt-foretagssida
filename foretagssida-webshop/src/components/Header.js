@@ -12,10 +12,6 @@ function Header() {
     let [meny, setMeny] = useState(true);
     let [lang, setLang] = useState('SV');
 
-
-
-
-
     return (
         <nav className="nav_bar">
 

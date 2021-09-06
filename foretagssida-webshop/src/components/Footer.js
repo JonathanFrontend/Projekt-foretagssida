@@ -4,7 +4,11 @@ import React from 'react'
 import '../App.css';
 
 // Images
-// import logo from "../assets/logo.png";
+import logo from '../components/footerLogo.png'
+import fbImg from '../components/fbImg.png'
+import instaImg from '../components/instaImg.png'
+import twitterImg from '../components/twitterImg.png'
+
 // import fbImg from "../assets/fb.png";
 // import instaImg from "../assets/insta.png";
 // import twitterImg from "../assets/twitter.png";
@@ -12,13 +16,13 @@ import '../App.css';
 export default function Footer() {
     return (
         <footer>
-            {/* <div className="footerContainer"> */}
+            <div className="footerContainer">
 
-                {/* <div className="footerBox">
-                    <img className="footerLogo" src={logo} alt='Logo'></img>
-                </div> */}
+                <div className="footerBoxLeft">
+                    <img className="footerImgLeft" src={logo} alt='Logo'></img>
+                </div>
 
-                <div className="footerBox">
+                <div className="footerBoxCenter">
                     <p>Snabblänkar</p>
                     <a className="footerLinks" href="/startpage">Startsida</a>
                     <a className="footerLinks" href="/about">Om oss</a>
@@ -28,19 +32,19 @@ export default function Footer() {
                     {/* <a className="footerLinks" href="/en">EN</a> */}
                 </div>
 
-                {/* <div className="footerBox">
-                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
-                        <img className="footerMedia" src={fbImg} alt='fbImg'></img>
+                <div className="footerBoxRight">
+                    <a href="https://www.facebook.com/" className="footerImgCover" target="_blank" rel="noreferrer">
+                        <img className="footerImg" src={fbImg} alt='fbImg'></img>
                     </a>
-                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-                        <img className="footerMedia" src={instaImg} alt='instaImg'></img>
+                    <a href="https://www.instagram.com/" className="footerImgCover" target="_blank" rel="noreferrer">
+                        <img className="footerImg" src={instaImg} alt='instaImg'></img>
                     </a>
-                    <a href="https://www.twitter.com/" target="_blank" rel="noreferrer">
-                        <img className="footerMedia" src={twitterImg} alt='twitterImg'></img>
+                    <a href="https://www.twitter.com/" className="footerImgCoverRight" target="_blank" rel="noreferrer">
+                        <img className="footerImg" src={twitterImg} alt='twitterImg'></img>
                     </a>
-                </div> */}
+                </div>
 
-            {/* </div> */}
+            </div>
 
             <p>© 2021 Bookstore</p>
         </footer>
