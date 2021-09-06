@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../components/Vector.png'
+
 import arrowDown from "../components/arrow-down.svg";
 import { useDispatch, useSelector } from "react-redux";
+
 
 function Header() {
     let [meny, setMeny] = useState(true);
