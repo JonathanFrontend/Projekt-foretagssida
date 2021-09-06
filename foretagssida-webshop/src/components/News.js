@@ -10,19 +10,21 @@ import { useSelector } from 'react-redux';
 
 export default function News() {
     let stateLang = useSelector(state => {return state.lang});
-    const text = () => {
-        switch(stateLang) {
-            case "sv":
-                return articlesJson.sv;
-            case "en":
-                return articlesJson.en;
-            default: return articlesJson.en;
-        }
-    }
-    const articles = text();
+    console.log(stateLang);
 
     let [addFilter, setAddFilter] = useState(false);
     let [addSort, setAddSort] = useState(false);
+    
+    const articlesTranslated = () => {
+        switch(stateLang) {
+            case 'sv':
+                return articlesJson.sv;
+            case 'en':
+                return articlesJson.en;
+            default: return articlesJson.sv;
+        }
+    }
+    const articles = articlesTranslated();
 
     let [content, setContent] = useState(articles)
 
@@ -55,7 +57,8 @@ export default function News() {
             const art = articles.filter(article => article.label === 'articles')
             setContent(art)
         }
-    }, [checkedOne, checkedTwo])
+    }, [checkedOne, checkedTwo, stateLang]);
+
 
     return (
         <div>
