@@ -33,7 +33,7 @@
             "author": "Neil Gaiman",
             "poster": "Rectangle_7.png",
             "price": 500,
-            "rating": 5,
+            "rating": 4.7,
             "wantToRead": false
         },
         {
@@ -52,6 +52,62 @@
             "poster": "Rectangle_9.png",
             "price": 500,
             "rating": 3,
+            "wantToRead": false
+        }
+    ],
+    "newBooks": [
+        {
+            "id": "7",
+            "title": "Realm Breaker",
+            "author": "Victoria Aveyard",
+            "poster": "Rectangle_12.png",
+            "price": 500,
+            "rating": 0,
+            "wantToRead": false
+        },
+        {
+            "id": "8",
+            "title": "We Are Satelites",
+            "author": "Sarah Pinsker",
+            "poster": "Rectangle_13.png",
+            "price": 500,
+            "rating": 0,
+            "wantToRead": false
+        },
+        {
+            "id": "9",
+            "title": "Sorrowland",
+            "author": "Rivers Solomon",
+            "poster": "Rectangle_14.png",
+            "price": 500,
+            "rating": 0,
+            "wantToRead": false
+        },
+        {
+            "id": "10",
+            "title": "Day Zero",
+            "author": "Robert Cargill",
+            "poster": "Rectangle_15.png",
+            "price": 500,
+            "rating": 0,
+            "wantToRead": false
+        },
+        {
+            "id": "11",
+            "title": "Local Woman Missing",
+            "author": "Mary Kubica",
+            "poster": "Rectangle_16.png",
+            "price": 500,
+            "rating": 0,
+            "wantToRead": false
+        },
+        {
+            "id": "12",
+            "title": "You're Invited",
+            "author": "Jon Levy",
+            "poster": "Rectangle_17.png",
+            "price": 500,
+            "rating": 0,
             "wantToRead": false
         }
     ]

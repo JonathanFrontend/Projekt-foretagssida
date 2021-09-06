@@ -1,0 +1,96 @@
+{
+  "sv" : {
+    "kontaktTxt" : {
+    "titleTxt" : "Kontakt oss",
+    "headingtxt": "Kontakta Bookstore",
+    "bodyTxt" : "Har du en idé eller funderning som du vill utforska tillsammans med oss? Vad kul – då vill vi gärna höra mer.."
+  },
+  "formTxt" : {
+    "fullName": "Förnamn och efternamn",
+    "email" : "E-post",
+    "subject": "Ämne",
+    "op1": "Välja ett ämne",
+    "op2": "Fråga om produkt/tjänst",
+    "op3": "Feedback",
+    "op4": "Klagomål",
+    "op5": "Annat"
+  },
+    "kontaktInfo" : [
+   {
+      "way": "Ringa oss",
+      "desc": "Mån-fre: 08.30-17.00",
+      "icon": "phone",
+      "info" : "010 4845485 - 072 125485",
+      "link" : ""
+    },
+    {
+      "way": "Maila oss",
+      "desc": "",
+      "icon": "@",
+      "info" : "info@bookstore.se",
+      "link" : ""
+    },
+    {
+      "way": "Besök huvudkontoret",
+      "desc": "Storgatan 100, 554 51 Stad",
+      "icon": "building",
+      "info" : "Visa Karta",
+      "link" : "https://map.google.com"
+    },
+    {
+      "way": "Besök ett regionkontor",
+      "desc": "",
+      "icon": "map",
+      "info" : "Hitta regionkontor",
+      "link" : "https://map.google.com"
+    }
+  ]
+},
+  "en" : {
+    "kontaktTxt" : {
+      "titleTxt" : "Contact us",
+      "headingtxt": "Contact Bookstore",
+      "bodyTxt" : "Do you have an idea or thought that you want to share with us? How fun - then we would like to know more."
+    },
+    "formTxt" : {
+      "fullName": "Full name",
+      "email" : "Email",
+      "subject": "Subject",
+      "op1": "Choose a subject",
+      "op2": "Ask about product / service",
+      "op3": "Feedback",
+      "op4": "Complaint",
+      "op5": "Other"
+    },
+    "kontaktInfo" : [
+    {
+       "way": "Call us",
+       "desc": "mon-fri: 08.30-17.00",
+       "icon": "phone",
+       "info" : "010 4845485 - 072 125485",
+       "link" : ""
+     },
+     {
+       "way": "Email us",
+       "desc": "",
+       "icon": "@",
+       "info" : "info@bookstore.se",
+       "link" : ""
+     },
+     {
+       "way": "Visit the head office",
+       "desc": "Storgatan 100, 554 51 Stad",
+       "icon": "building",
+       "info" : "Show Map",
+       "link" : "https://map.google.com"
+     },
+     {
+       "way": "Visit a regional office",
+       "desc": "",
+       "icon": "map",
+       "info" : "Find regional offices",
+       "link" : "https://map.google.com"
+     }
+   ]
+}
+}
