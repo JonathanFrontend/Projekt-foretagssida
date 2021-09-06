@@ -6,21 +6,22 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
+import lang from './lang.json';
 // import './i18n';
 
 const initialState = {
-  lang: 'sv'
+  lang: lang.en
 }
 
 function reducer(state = initialState, action) {
   switch (action.type) {
     case "sv":
       return {
-        lang: 'sv'
+        lang: lang.sv
       };
     case "en":
       return {
-        lang: 'en'
+        lang: lang.en
       };
     default:
       return state;

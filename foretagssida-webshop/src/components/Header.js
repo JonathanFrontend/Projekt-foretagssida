@@ -11,7 +11,7 @@ import { useDispatch, useSelector } from 'react-redux';
 function Header() {
 
     let [meny, setMeny] = useState(true);
-    let [lang, setLang] = useState(['sv', 'en']);
+    let [lang, setLang] = useState(['en', 'sv']);
     let stateLang = useSelector(state => {
         return state.lang
     });

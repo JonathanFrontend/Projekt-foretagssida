@@ -5,6 +5,7 @@
         "btnInHero": "Börja",
         "titleInMain" : "Populära böcker",
         "newlyReleased": "Nyligen släppta",
+        "buy": "Köp",
         "personal" : [
             {
               "name": "Jackie",
@@ -72,6 +73,7 @@
         "btnInHero":"Get started",
         "titleInMain" : "Popular books",
         "newlyReleased": "Newly released",
+        "buy": "Buy",
         "personal": [
             {
               "name": "Jackie",

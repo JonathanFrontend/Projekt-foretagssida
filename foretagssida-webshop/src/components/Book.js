@@ -1,7 +1,13 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 
 function Book(props){
+    let text = useSelector(state => {
+        return state.lang
+    });
+    let dispatch = useDispatch();
+
     const [wantToRead, setWantToRead] = useState(props.book.wantToRead);
     let typeOfCheck = wantToRead ? "green-check" : "black-check";
     const rating = props.book.rating;
@@ -44,7 +50,7 @@ function Book(props){
             </div>
             <div className="buy-box">
                 <button className="buy-btn">
-                    Köp
+                    {text.buy}
                 </button>
             </div>
         </aside>
