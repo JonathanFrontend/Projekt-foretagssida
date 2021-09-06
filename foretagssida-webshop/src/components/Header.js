@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../components/Vector.png'
 
 import arrowDown from '../components/arrow-down.svg'
 
-
-
-
 function Header() {
 
     let [meny, setMeny] = useState(true);
-    let [lang, setLang] = useState('SV');
+    let [lang, setLang] = useState(['en', 'se']);
+
+    useEffect(()=>{
+        console.log(lang)
+    }, [lang])
 
     return (
         <nav className="nav_bar">
@@ -35,7 +36,7 @@ function Header() {
             <section className="nav_buttons">
                 {meny ?
                     <div className="one">
-                        <p className="first_btn">{lang}</p>
+                        <p className="first_btn">{lang[0]}</p>
                         <button onClick={() => setMeny(!meny)} className="arrow_down">
                             <img className="arrow_size" src={arrowDown} alt="arrow_down" />
                         </button>
@@ -43,39 +44,24 @@ function Header() {
                     :
                     <section>
                         <div className="one">
-                            <p id="swe" className="first_btn">{lang}</p>
+                            <p id="swe" className="first_btn">{lang[0]}</p>
                             <button onClick={() => setMeny(!meny)}
                                 className="arrow_down">
                                 <img className="arrow_size" src={arrowDown} alt="arrow_down" />
                             </button>
                         </div>
 
-                        <button
-                            onClick={() => setLang('EN')}
-                            className="hidden two"
-                        >en</button>
+                        <button className="hidden two" 
+                        onClick={() => setLang(lang.reverse())}
+                        >{lang[1]}</button>
 
 
                     </section>
                 }
 
-
-
-
-
-
             </section>
-
-
-
-
         </nav>
-
-
-
-
     )
 }
-
 
 export default Header;
