@@ -1,12 +1,28 @@
 import { React } from "react";
 import companyImage from "../images/company.png";
 import kontaktData from "../data/kontaktData.json";
+import { useSelector, useDispatch } from 'react-redux';
 
 function Kontakt() {
+
+  let stateLang = useSelector(state => {
+    return state.lang
+});
+
+const text = () => {
+    switch(stateLang) {
+        case 'en':
+            return kontaktData.en;
+        case 'sv':
+            return kontaktData.sv;
+        default:
+            return kontaktData.sv;
+    }
+};
   return (
     <>
       <div className="header-img">
-        <h1 className="header-text">Kontakta oss</h1>
+        <h1 className="header-text">{text().kontaktTxt.titleTxt}</h1>
       </div>
       <div className="app-container">
         <div className="company-image-container">
@@ -17,14 +33,14 @@ function Kontakt() {
           />
         </div>
         <section className="section-spacing">
-          <h1 className="headingtext primary">Kontakta Bookstore</h1>
+          <h1 className="headingtext primary">{text().kontaktTxt.headingtxt}</h1>
           <p className="bodytext">
-          Har du en idé eller funderning som du vill utforska tillsammans med oss? Vad kul – då vill vi gärna höra mer..
+          {text().kontaktTxt.bodyTxt}
           </p>
         </section>
         <section className="section-spacing">
           <ul className="kontakt-list">
-            {kontaktData.kontakt.map((item, key) => (
+            {text().kontaktInfo.map((item, key) => (
               <li className="kontakt-items">
                 <div className="kontakt-left">
                   <img src={`/images/${item.icon}.png`} alt="kontakt icon" />
@@ -56,23 +72,24 @@ function Kontakt() {
         <section className="section-spacing">
           <form className="">
             <div className="form-group">
-              <label className="form-text-label">Förnamn och efternamn</label>
+              <label className="form-text-label">{text().formTxt.fullName}</label>
               <input className="form-text-input" type="text" />
             </div>
             <div className="form-group">
-              <label className="form-text-label">E-post:</label>
+              <label className="form-text-label">{text().formTxt.email}</label>
               <input className="form-text-input" type="text" />
             </div>
             <div className="form-group">
-              <label className="form-text-label">Ämne</label>
+              <label className="form-text-label">{text().formTxt.subject}</label>
               <select className="form-text-input form-select">
-                <option value="Fråga om produkt/tjänst">Fråga om produkt/tjänst</option>
-                <option value="Feedback">Feedback</option>
-                <option value="Klagomål">Klagomål</option>
-                <option value="Annat">Annat</option>
-                <option value="Välja ett ämne" selected>
-                Välja ett ämne
+              <option  defaultValue="Välja ett ämne">
+              {text().formTxt.op1}
                 </option>
+                <option value="Fråga om produkt/tjänst">{text().formTxt.op2}</option>
+                <option value="Feedback">{text().formTxt.op3}</option>
+                <option value="Klagomål">{text().formTxt.op4}</option>
+                <option value="Annat">{text().formTxt.op5}</option>
+                
               </select>
               <textarea className="form-text-input" name="content" rows="4" cols="50"></textarea>
             </div>

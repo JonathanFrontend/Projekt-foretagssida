@@ -610,6 +610,10 @@ padding-left: 1.5rem;
   background-color: #F9F1FA;
   }
 
+  .faq-question p{
+    font-size: 1.5rem;
+  }
+
   .faq-icon{
     font-size: 2rem;
     display: block;
@@ -620,6 +624,10 @@ padding-left: 1.5rem;
   .faq-answer{
     padding: 2rem 3rem;
     transition: all 200ms ease-out;
+  }
+
+  .faq-answer p{
+    font-size: 1.5rem;
   }
   
   .show{
