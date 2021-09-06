@@ -11,24 +11,24 @@ function Startpage(){
                 <div className='hero-contents'>
                     <div className="hero-box hero-box-1">
                         <h1 className="hero-title">
-                        {t('Hero-title.1')}
+                        {t('titleInHero')}
                         </h1>
                     </div>
                     <div className="hero-box hero-box-2">
                         <p className="hero-text">
-                        {t('Hero-text.1')}
+                        {t('textInHero')}
                         </p>
                     </div>
                     <div className="hero-box hero-box-3">
                         <button className="btn">
-                        {t('Get-started.1')}
+                        {t('btnInHero')}
                         </button>
                     </div>
                 </div>
             </div>
             <section className='main-contents'>
                 <div className='main-contents-top'>
-                    <h2 className="title">{t('Popular-books.1')}</h2>
+                    <h2 className="title">{t('titleInMain')}</h2>
                 </div>
                 <div className="bookshelf">
                     <article className="shelf">

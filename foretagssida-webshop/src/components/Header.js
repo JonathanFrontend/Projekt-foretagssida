@@ -31,10 +31,10 @@ function Header() {
 
             <section className="nav_menu">
                 <ul>
-                    <Link to="/news" className="nav_link">{t('News.1')}</Link>
-                    <Link to="/about" className="nav_link">{t('About.1')}</Link>
-                    <Link to="/faq" className="nav_link">{t('FAQ.1')}</Link>
-                    <Link to="/contact" className="nav_link">{t('Contact.1')}</Link>
+                    <Link to="/news" className="nav_link">{t('News')}</Link>
+                    <Link to="/about" className="nav_link">{t('About')}</Link>
+                    <Link to="/faq" className="nav_link">{t('FAQ')}</Link>
+                    <Link to="/contact" className="nav_link">{t('Contact')}</Link>
                 </ul>
             </section>
 

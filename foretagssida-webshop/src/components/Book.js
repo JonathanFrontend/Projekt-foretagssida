@@ -1,7 +1,9 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Book(props){
+    const { t, i18n } = useTranslation();
     const [wantToRead, setWantToRead] = useState(props.book.wantToRead);
     let typeOfCheck = wantToRead ? "green-check" : "black-check";
     const rating = props.book.rating;
@@ -44,7 +46,7 @@ function Book(props){
             </div>
             <div className="buy-box">
                 <button className="buy-btn">
-                    Köp
+                    {t('buy')}
                 </button>
             </div>
         </aside>
