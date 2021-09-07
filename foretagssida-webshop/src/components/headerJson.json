@@ -1,0 +1,16 @@
+{
+    "sv": {
+        "linkOne": "Startsida",
+        "linkTwo": "Nyheter",
+        "linkThree": "Om oss",
+        "linkFour": "Vanliga frågor",
+        "linkFive": "Kontakt"
+    },
+    "en": {
+        "linkOne": "Startpage",
+        "linkTwo": "News",
+        "linkThree": "About Us",
+        "linkFour": "Questions",
+        "linkFive": "Contact"
+    }
+}
