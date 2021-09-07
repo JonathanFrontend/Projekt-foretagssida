@@ -1,4 +1,6 @@
 {
+  "sv" : {
+    "headingTxt": "Vanliga Frågor",
     "questionsList": [
       {
         "question": "När får jag min bok?",
@@ -30,4 +32,40 @@
       
      
     ]
+  },
+
+  "en" : {
+    "headingTxt": "Frequent questions",
+    "questionsList": [
+      {
+        "question": "When will I receive my book?",
+        "answer": "In the order confirmation you have received from us via email, you can easily calculate the total delivery time, by adding our handling time, 'Shipped within', with the shipping time. If the delivery is delayed by the promised time, you will receive a message from us."
+        
+      },
+      {
+        "question": "Undo a purchase",
+        "answer": "You have the right to cancel a purchase within 14 days after you received your delivery. Use the delivery note you received with the books and follow the return instructions."
+        
+      },
+      {
+        "question": "Are you wondering about your payment?",
+        "answer": "All questions about payment are answered by our payment partner Klarna."
+        
+      },
+      {
+        "question": "Where's my book?",
+        "answer": "Follow your order In the order confirmation you receive, there is a link where you can easily follow how your order is updated. You can see what is in stock, what is on its way in, what is not, what has been canceled, and when the order is ready and on its way."
+      },
+      {
+        "question": "What are the shipping costs?",
+        "answer": "We offer the following shipping options at checkout: Instabox Parcel Cabinet Cost SEK 25 Time 1-2 weekdays The shipping option Parcel Cabinet will be visible at checkout, if Instabox has a locker where you live. "
+      },
+      {
+        "question": "Buy gift cards at Bokus",
+        "answer": "Our gift cards are available in denominations of SEK 100, 200, 300, 400 and 500. The gift cards are valid for 1 year from the date of purchase. They can be sent by e-mail or to be printed on your own printer. You can write a greeting of a maximum of 100 characters."
+      }
+      
+     
+    ]
   }
+}
