@@ -1,4 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { useDispatch, useSelector } from "react-redux";
+
+import headerJson from "./headerJson.json";
 
 // CSS
 import '../App.css';
@@ -9,11 +12,24 @@ import fbImg from '../components/fbImg.png'
 import instaImg from '../components/instaImg.png'
 import twitterImg from '../components/twitterImg.png'
 
-// import fbImg from "../assets/fb.png";
-// import instaImg from "../assets/insta.png";
-// import twitterImg from "../assets/twitter.png";
-
 export default function Footer() {
+
+    let stateLang = useSelector(state => {
+        return state.lang
+    });
+
+
+    const text = () => {
+        switch (stateLang) {
+            case 'en':
+                return headerJson.en;
+            case 'sv':
+                return headerJson.sv;
+            default:
+                return headerJson.sv;
+        }
+    };
+
     return (
         <footer>
             <div className="footerContainer">
@@ -23,12 +39,12 @@ export default function Footer() {
                 </div>
 
                 <div className="footerBoxCenter">
-                    <p>Snabblänkar</p>
-                    <a className="footerLinks" href="/startpage">Startsida</a>
-                    <a className="footerLinks" href="/about">Om oss</a>
-                    <a className="footerLinks" href="/news">Nyheter/Artiklar</a>
-                    <a className="footerLinks" href="/faq">Vanliga Frågor</a>
-                    <a className="footerLinks" href="/contact">Kontakt</a>
+                    <p>{text().fastLinks}</p>
+                    <a className="footerLinks" href="/startpage">{text().linkOne}</a>
+                    <a className="footerLinks" href="/about">{text().linkThree}</a>
+                    <a className="footerLinks" href="/news">{text().linkTwo}</a>
+                    <a className="footerLinks" href="/faq">{text().linkFour}</a>
+                    <a className="footerLinks" href="/contact">{text().linkFive}</a>
                     {/* <a className="footerLinks" href="/en">EN</a> */}
                 </div>
 
