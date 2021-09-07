@@ -1,7 +1,24 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 
 function Book(props){
+    const stateLang = useSelector(state => state.lang);
+    const words = (_buy, _currency) => {
+        return {
+            buy: _buy,
+            currency: _currency
+        }
+    }
+    const text = () => {
+        switch(stateLang){
+            case "sv":
+                return words("Köp", "Kr");
+            case "en":
+                return words("Buy", " SEK");
+                default: return words("Buy", "SEK");
+        }
+    }
     const [wantToRead, setWantToRead] = useState(props.book.wantToRead);
     let typeOfCheck = wantToRead ? "green-check" : "black-check";
     const rating = props.book.rating;
@@ -39,12 +56,12 @@ function Book(props){
             </div>
             <div className="price-box">
                 <h3>
-                    {price}Kr
+                    {price + text().currency}
                 </h3>
             </div>
             <div className="buy-box">
                 <button className="buy-btn">
-                    Köp
+                    {text().buy}
                 </button>
             </div>
         </aside>
