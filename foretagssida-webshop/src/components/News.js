@@ -134,7 +134,7 @@ export default function News() {
 
 
                                     <aside className="articleAside">
-                                        <button className="articleButton">{text().articles} -{text().oldest}</button>
+                                        <button className="articleButton">{text().date} - {text().oldest}</button>
                                         <input type="radio" name="sort" onClick={() => setRadioChecked(false)} />
                                     </aside>
                                 </div>
