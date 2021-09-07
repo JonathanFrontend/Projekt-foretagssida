@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import {useSelector } from "react-redux";
 
 import headerJson from "./headerJson.json";
@@ -39,11 +40,11 @@ export default function Footer() {
 
                 <div className="footerBoxCenter">
                     <p>{text().fastLinks}</p>
-                    <a className="footerLinks" href="/startpage">{text().linkOne}</a>
-                    <a className="footerLinks" href="/about">{text().linkThree}</a>
-                    <a className="footerLinks" href="/news">{text().linkTwo}</a>
-                    <a className="footerLinks" href="/faq">{text().linkFour}</a>
-                    <a className="footerLinks" href="/contact">{text().linkFive}</a>
+                    <Link className="footerLinks" to="/startpage">{text().linkOne}</Link>
+                    <Link className="footerLinks" to="/about">{text().linkThree}</Link>
+                    <Link className="footerLinks" to="/news">{text().linkTwo}</Link>
+                    <Link className="footerLinks" to="/faq">{text().linkFour}</Link>
+                    <Link className="footerLinks" to="/contact">{text().linkFive}</Link>
                 </div>
 
                 <div className="footerBoxRight">
