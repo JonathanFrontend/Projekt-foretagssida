@@ -1,5 +1,6 @@
 {
     "sv": {
+        "fastLinks": "Snabblänkar",
         "linkOne": "Startsida",
         "linkTwo": "Nyheter",
         "linkThree": "Om oss",
@@ -7,6 +8,7 @@
         "linkFive": "Kontakt"
     },
     "en": {
+        "fastLinks": "Quick Links",
         "linkOne": "Startpage",
         "linkTwo": "News",
         "linkThree": "About Us",
