@@ -18,7 +18,6 @@ export default function Footer() {
         return state.lang
     });
 
-
     const text = () => {
         switch (stateLang) {
             case 'en':
@@ -45,7 +44,6 @@ export default function Footer() {
                     <a className="footerLinks" href="/news">{text().linkTwo}</a>
                     <a className="footerLinks" href="/faq">{text().linkFour}</a>
                     <a className="footerLinks" href="/contact">{text().linkFive}</a>
-                    {/* <a className="footerLinks" href="/en">EN</a> */}
                 </div>
 
                 <div className="footerBoxRight">

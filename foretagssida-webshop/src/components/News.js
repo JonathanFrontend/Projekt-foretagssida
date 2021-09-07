@@ -65,14 +65,14 @@ export default function News() {
             setContent(articles)
 
         } else if (checkedOne === true && checkedTwo === false) {
-            const news = articles.filter(article => article.label === 'news')
+            const news = articles.filter(article => article.label === 'news' || article.label === 'nyheter' )
             setContent(news)
         }
         else if (checkedOne === true && checkedTwo === true) {
             setContent(articles)
         }
         else {
-            const art = articles.filter(article => article.label === 'articles')
+            const art = articles.filter(article => article.label === 'articles' || article.label === 'artiklar')
             setContent(art)
         }
 
