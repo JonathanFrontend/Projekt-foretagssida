@@ -9,7 +9,7 @@ import {Provider} from 'react-redux'
 
 
 const initialState = {
-  lang: 'sv'
+  lang: 'en'
 }
 
 function reducer(state = initialState, action) {
