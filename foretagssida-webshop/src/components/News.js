@@ -14,17 +14,33 @@ export default function News() {
 
     let [addFilter, setAddFilter] = useState(false);
     let [addSort, setAddSort] = useState(false);
-    
-    const articlesTranslated = () => {
-        switch(stateLang) {
-            case 'sv':
-                return articlesJson.sv;
-            case 'en':
-                return articlesJson.en;
-            default: return articlesJson.sv;
+    let textObj = (articlesArr, news, articles, filter, sort, newsH2, date, newest, oldest, author, type) => {
+        return {
+            articlesArr: articlesArr,
+            news: news,
+            articles: articles,
+            filter: filter,
+            sort: sort,
+            newsH2: newsH2,
+            date: date,
+            newest: newest,
+            oldest: oldest,
+            author: author,
+            type: type
         }
     }
-    const articles = articlesTranslated();
+    
+    const text = () => {
+        switch(stateLang) {
+            case 'sv':
+                return textObj(articlesJson.sv, "Nyheter", "Artiklar", "Filter", "Sortera", "Våra Nyheter och artiklar", "Datum", "Nyast först", "Äldsta först", "Författare", "Typ");
+            case 'en':
+                return textObj(articlesJson.en, "News", "Articles", "Filter", "Sort", "Our News and Articles", "Date", "Newest first", "Oldest first", "Author", "Type");
+            default: return textObj(articlesJson.en, "News", "Articles", "Filter", "Sort", "Our News and Articles", "Date", "Newest first", "Oldest first", "Author", "Type");
+        }
+    }
+    const articles = text().articlesArr;
+    console.log(articles)
 
     let [content, setContent] = useState(articles)
 
@@ -64,19 +80,19 @@ export default function News() {
         <div>
 
             <div className="header-img">
-                <h1 className="header-text">Nyheter</h1>
+                <h1 className="header-text">{text().news}</h1>
             </div>
             <div className="app-container">
                 <div className="newsWrapper">
 
-                    <h2 className="newsH2">Våra Nyheter och Artiklar</h2>
+                    <h2 className="newsH2">{text().newsH2}</h2>
 
                     <div className="newsBoxforFilterandSort">
 
                         <div className="newsBoxFilter">
 
                             <div className="newsArrow">
-                                <p>Filtrera</p>
+                                <p>{text().filter}</p>
                                 <button className="arrow_down" onClick={() => setAddFilter(!addFilter)}>
                                     <img className="arrow_size purp" src={arrowDownPurp} alt="arrow_down" />
                                 </button>
@@ -84,12 +100,12 @@ export default function News() {
                             {addFilter ?
                                 <div className="newsButtonBox">
                                     <aside className="newsAside">
-                                        <button className="newsButton">Nyheter</button>
+                                        <button className="newsButton">{text().news}</button>
                                         <input type="checkbox" checked={checkedOne} onChange={() => setCheckedOne(!checkedOne)} />
                                     </aside>
 
                                     <aside className="newsAside">
-                                        <button className="newsButton">Artiklar</button>
+                                        <button className="newsButton">{text().articles}</button>
                                         <input type="checkbox" checked={checkedTwo} onChange={() => setCheckedTwo(!checkedTwo)} />
                                     </aside>
                                 </div>
@@ -101,7 +117,7 @@ export default function News() {
                         <div className="newsBoxFilter">
 
                             <div className="newsArrow">
-                                <p>Sortera</p>
+                                <p>{text().sort}</p>
                                 <button className="arrow_down" onClick={() => setAddSort(!addSort)}>
                                     <img className="arrow_size" src={arrowDownPurp} alt="arrow_down" />
                                 </button>
@@ -109,13 +125,13 @@ export default function News() {
                             {addSort ?
                                 <div className="articleButtonBox">
                                     <aside className="articleAside">
-                                        <button className="articleButton">Datum - Senaste Först</button>
+                                        <button className="articleButton">{text().date} - {text().newest}</button>
                                         <input type="radio" name="sort" defaultChecked onClick={() => setRadioChecked(true)} />
                                     </aside>
 
 
                                     <aside className="articleAside">
-                                        <button className="articleButton">Datum - Äldst Först</button>
+                                        <button className="articleButton">{text().articles} -{text().oldest}</button>
                                         <input type="radio" name="sort" onClick={() => setRadioChecked(false)} />
                                     </aside>
                                 </div>
@@ -130,8 +146,8 @@ export default function News() {
                                 <h6 className="contentHeadline">{data.headline}</h6>
                                 <div className="miniContent">
                                     <p>{data.date}</p>
-                                    <p>Författare - {data.author}</p>
-                                    <p>Typ -  {data.label}</p>
+                                    <p>{text().author} - {data.author}</p>
+                                    <p>{text().type} -  {data.label}</p>
                                 </div>
                             </div>
                         )}
