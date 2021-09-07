@@ -30,7 +30,7 @@
 }
 
 .nav_logo {
-  height: 55px;
+  height: 33px;
   margin-left: 75px;
 }
 
@@ -424,8 +424,10 @@ footer p{
   color: #000000;
 }
 .about-h3{
-  padding-top: 6rem;
-  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
   color: #BA3FCA;
 }
 
@@ -462,9 +464,7 @@ footer p{
 }
 
 .about-img{
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 1rem;
+  margin-bottom: 4rem;
   background: url("./images/MicrosoftTeams-image\ \(3\).png");
   background-position: center;
   background-repeat: no-repeat;
@@ -513,7 +513,7 @@ footer p{
   padding-left: 5rem;
   background: url("./images/header.png") no-repeat;
   background-size: cover;
-  height: 242px;
+  height: 150px;
   width: 100%;
 }
 
@@ -531,7 +531,9 @@ footer p{
   width: 100%;
 }
 .headingtext{
-  font-size: 3rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
   padding-bottom: 3rem;
 }
 .primary{
@@ -680,11 +682,9 @@ padding-left: 1.5rem;
  
 /*     /////////////////////////////////////////////////////////////////////      */
 
-.newsWrapper{
-  padding: 107px 75px;
-}
+
 .newsH2{
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;

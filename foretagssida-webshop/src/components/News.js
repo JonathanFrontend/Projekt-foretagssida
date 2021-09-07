@@ -33,16 +33,17 @@ export default function News() {
     const text = () => {
         switch(stateLang) {
             case 'sv':
-                return textObj(articlesJson.sv, "Nyheter", "Artiklar", "Filter", "Sortera", "Våra Nyheter och artiklar", "Datum", "Nyast först", "Äldsta först", "Författare", "Typ");
+                return textObj(articlesJson.sv, "Nyheter", "Artiklar", "Filter", "Sortera", "Våra nyheter och artiklar", "Datum", "Nyast först", "Äldsta först", "Författare", "Typ");
             case 'en':
-                return textObj(articlesJson.en, "News", "Articles", "Filter", "Sort", "Our News and Articles", "Date", "Newest first", "Oldest first", "Author", "Type");
-            default: return textObj(articlesJson.en, "News", "Articles", "Filter", "Sort", "Our News and Articles", "Date", "Newest first", "Oldest first", "Author", "Type");
+                return textObj(articlesJson.en, "News", "Articles", "Filter", "Sort", "Our news and articles", "Date", "Newest first", "Oldest first", "Author", "Type");
+            default: return textObj(articlesJson.en, "News", "Articles", "Filter", "Sort", "Our news and articles", "Date", "Newest first", "Oldest first", "Author", "Type");
         }
     }
+    
     const articles = text().articlesArr;
-    console.log(articles)
-
     let [content, setContent] = useState(articles)
+
+    
 
     const [checkedOne, setCheckedOne] = useState(false);
     const [checkedTwo, setCheckedTwo] = useState(false);
@@ -59,6 +60,7 @@ export default function News() {
     // This useeffect is handling the Filter function
 
     useEffect(() => {
+        
         if (checkedOne === false && checkedTwo === false) {
             setContent(articles)
 
@@ -73,7 +75,8 @@ export default function News() {
             const art = articles.filter(article => article.label === 'articles')
             setContent(art)
         }
-    }, [checkedOne, checkedTwo, stateLang]);
+
+    }, [checkedOne, checkedTwo, stateLang, articles]);
 
 
     return (

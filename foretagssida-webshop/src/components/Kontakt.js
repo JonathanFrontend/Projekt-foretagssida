@@ -40,8 +40,8 @@ const text = () => {
         </section>
         <section className="section-spacing">
           <ul className="kontakt-list">
-            {text().kontaktInfo.map((item, key) => (
-              <li className="kontakt-items">
+            {text().kontaktInfo.map(item => (
+              <li className="kontakt-items" key={item.way}>
                 <div className="kontakt-left">
                   <img src={`/images/${item.icon}.png`} alt="kontakt icon" />
                   <div className="kontakt-left-content">

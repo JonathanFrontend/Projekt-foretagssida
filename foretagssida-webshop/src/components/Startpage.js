@@ -1,15 +1,15 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import Book from './Book'
 import books from '../books.json';
 import lang from '../lang.json';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 function Startpage(){
     //const { t, i18n } = useTranslation();
     let stateLang = useSelector(state => {
         return state.lang
     });
-    let dispatch = useDispatch();
+    
     console.log('State Lang:', stateLang);
     const text = () => {
         switch(stateLang) {
@@ -50,7 +50,7 @@ function Startpage(){
                 <div className="bookshelf">
                     <article className="shelf">
                         {
-                            books.popularBooks.map(book => <Book book={book}/>)
+                            books.popularBooks.map(book => <Book book={book} key={book.id}/>)
                         }
                     </article>
                 </div>
@@ -60,7 +60,7 @@ function Startpage(){
                 <div className="bookshelf">
                     <article className="shelf">
                         {
-                            books.newBooks.map(book => <Book book={book}/>)
+                            books.newBooks.map(book => <Book book={book} key={book.id}/>)
                         }
                     </article>
                 </div>
