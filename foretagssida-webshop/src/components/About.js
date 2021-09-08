@@ -8,7 +8,6 @@ function About() {
         return state.lang
     });
     
-    
     const text = () => {
         switch(stateLang) {
             case 'en':

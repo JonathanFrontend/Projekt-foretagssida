@@ -2,16 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import {useSelector } from "react-redux";
 
-import headerJson from "./headerJson.json";
-
-// CSS
-import '../App.css';
+import headerJson from "../data/headerJson.json";
 
 // Images
-import logo from '../components/footerLogo.png'
-import fbImg from '../components/fbImg.png'
-import instaImg from '../components/instaImg.png'
-import twitterImg from '../components/twitterImg.png'
+import logo from '../images/footerLogo.png'
+import fbImg from '../images/fbImg.png'
+import instaImg from '../images/instaImg.png'
+import twitterImg from '../images/twitterImg.png'
 
 export default function Footer() {
 

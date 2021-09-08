@@ -1,7 +1,7 @@
 import React from 'react';
 import Book from './Book'
-import books from '../books.json';
-import lang from '../lang.json';
+import books from '../data/books.json';
+import startPageText from '../data/startPageText.json';
 import { useSelector } from 'react-redux';
 
 function Startpage(){
@@ -14,11 +14,11 @@ function Startpage(){
     const text = () => {
         switch(stateLang) {
             case 'en':
-                return lang.en;
+                return startPageText.en;
             case 'sv':
-                return lang.sv;
+                return startPageText.sv;
             default:
-                return lang.sv;
+                return startPageText.sv;
         }
     };
     

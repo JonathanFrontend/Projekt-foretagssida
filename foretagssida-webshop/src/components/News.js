@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import articlesJson from "../data/articles.json"
 
 // Import Pictures
-import arrowDownPurp from '../components/arrow-down-purp.png'
+import arrowDownPurp from '../images/arrow-down-purp.png'
 
 import { useSelector } from 'react-redux';
 

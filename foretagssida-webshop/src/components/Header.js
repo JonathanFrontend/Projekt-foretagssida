@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../components/Vector.png'
+import logo from '../images/Vector.png'
 
-import arrowDown from "../components/arrow-down.svg";
+import arrowDown from "../images/arrow-down.svg";
 import { useDispatch, useSelector } from "react-redux";
 
-import headerJson from "./headerJson.json";
+import headerJson from "../data/headerJson.json";
 
 
 function Header() {
