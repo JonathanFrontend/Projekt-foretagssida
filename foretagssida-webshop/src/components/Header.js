@@ -16,6 +16,7 @@ function Header() {
         return state.lang
     });
     let dispatch = useDispatch();
+    /* console.log('State Lang:', stateLang); */
 
 
     const text = () => {

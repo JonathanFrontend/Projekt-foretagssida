@@ -13,18 +13,18 @@ const initialState = {
 }
 
 function reducer(state = initialState, action) {
-  switch (action.type){
-    case "sv":
-      return{
-        lang: 'sv'
+switch (action.type){
+  case "sv":
+    return{
+      lang: 'sv'
+    };
+  case "en":
+      return {
+        lang:'en'
       };
-      case "en":
-        return {
-          lang:'en'
-        };
-        default: return state;
+  default: return state;
 
-  }
+}
 }
 
 const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());

@@ -1,13 +1,16 @@
+
 import {React} from 'react';
+/* hämta personaljson fil för att kunna map och ändra till en och sv */
 import personal from "../data/personal.json"
 import { useSelector } from 'react-redux';
-
 function About() {
 
+    /* state från reducer som vi har skapat i index.js */
     let stateLang = useSelector(state => {
         return state.lang
     });
     
+    /* ändra beroende vilken spårk och return vilken objekt i json filen  */
     const text = () => {
         switch(stateLang) {
             case 'en':
@@ -34,6 +37,7 @@ function About() {
                     <h3 className="about-h3">{text().aboutText.aboutH3Text}</h3>
 
                 <div className="personal-content">
+                {/*Funktion som hämtar data från personal och sedan mappar vi ut vår struktur.*/}
                     {text().personalInfo.map((staff, key) => <div className="personal-card" key={key}> 
                     <img className="image"src={`/images/${staff.img}`} alt={staff.alt_text}/> 
                         <div className="about-text">
