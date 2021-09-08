@@ -5,7 +5,6 @@ import startPageText from '../data/startPageText.json';
 import { useSelector } from 'react-redux';
 
 function Startpage(){
-    //const { t, i18n } = useTranslation();
     let stateLang = useSelector(state => {
         return state.lang
     });
