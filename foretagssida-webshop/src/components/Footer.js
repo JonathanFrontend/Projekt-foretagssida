@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import {useSelector } from "react-redux";
 
+// Use a Json file to help with the footers translation.
 import headerJson from "../data/headerJson.json";
 
 // Images
@@ -29,6 +30,7 @@ export default function Footer() {
 
     return (
         <footer>
+            
             <div className="footerContainer">
 
                 <div className="footerBoxLeft">
