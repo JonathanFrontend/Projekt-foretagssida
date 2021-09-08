@@ -1,0 +1,18 @@
+{
+    "sv": {
+        "fastLinks": "Snabblänkar",
+        "linkOne": "Startsida",
+        "linkTwo": "Nyheter",
+        "linkThree": "Om oss",
+        "linkFour": "Vanliga frågor",
+        "linkFive": "Kontakt"
+    },
+    "en": {
+        "fastLinks": "Quick Links",
+        "linkOne": "Home",
+        "linkTwo": "News",
+        "linkThree": "About Us",
+        "linkFour": "Questions",
+        "linkFive": "Contact"
+    }
+}

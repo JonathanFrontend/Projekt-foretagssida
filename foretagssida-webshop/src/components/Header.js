@@ -2,23 +2,33 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../components/Vector.png'
 
-import arrowDown from '../components/arrow-down.svg'
+import arrowDown from "../components/arrow-down.svg";
+import { useDispatch, useSelector } from "react-redux";
 
-import { useDispatch, useSelector } from 'react-redux';
-
+import headerJson from "./headerJson.json";
 
 
 function Header() {
-
-
     let [meny, setMeny] = useState(true);
-    let [lang, setLang] = useState(['sv', 'en']);
+    let [lang, setLang] = useState(['en', 'sv']);
+
     let stateLang = useSelector(state => {
         return state.lang
     });
     let dispatch = useDispatch();
     /* console.log('State Lang:', stateLang); */
 
+
+    const text = () => {
+        switch (stateLang) {
+            case 'en':
+                return headerJson.en;
+            case 'sv':
+                return headerJson.sv;
+            default:
+                return headerJson.sv;
+        }
+    };
 
 
     return (
@@ -33,10 +43,11 @@ function Header() {
 
             <section className="nav_menu">
                 <ul>
-                    <Link to="/news" className="nav_link">Nyheter</Link>
-                    <Link to="/about" className="nav_link">Om oss</Link>
-                    <Link to="/faq" className="nav_link">Vanliga frågor</Link>
-                    <Link to="/contact" className="nav_link">Kontakt</Link>
+                    <Link to="/" className="nav_link">{text().linkOne}</Link>
+                    <Link to="/news" className="nav_link">{text().linkTwo}</Link>
+                    <Link to="/about" className="nav_link">{text().linkThree}</Link>
+                    <Link to="/faq" className="nav_link">{text().linkFour}</Link>
+                    <Link to="/contact" className="nav_link">{text().linkFive}</Link>
                 </ul>
             </section>
 
@@ -61,23 +72,19 @@ function Header() {
 
                         <button
                             onClick={() => {
-                                dispatch({type: lang[1]});
+                                dispatch({ type: lang[1] });
                                 setLang(lang.reverse());
                             }}
                             className="hidden two"
                         >{lang[1]}</button>
-            </section>      
+                    </section>
                 }
 
             </section>
-    </nav>
-
-
-
-
+        </nav>
     )
 
-         
+
 }
 
 export default Header;

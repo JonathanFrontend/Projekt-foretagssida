@@ -1,6 +1,7 @@
 import {React} from 'react';
 import personal from "../data/personal.json"
 import { useSelector } from 'react-redux';
+
 function About() {
 
     let stateLang = useSelector(state => {

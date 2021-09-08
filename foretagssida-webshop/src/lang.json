@@ -1,10 +1,11 @@
 {
     "sv": {
         "titleInHero": "Något magiskt kommer hända om du läser en bra bok.",
-        "textInHero": "Bokstället hjälper du hålla koll på din läsning & träffa nya vänner på vägen.",
+        "textInHero": "Bokstället hjälper dig hålla koll på din läsning & träffa nya vänner på vägen.",
         "btnInHero": "Börja",
         "titleInMain" : "Populära böcker",
-        "newlyReleased": "Nyligen släppta"
+        "newlyReleased": "Nyligen släppta",
+        "News": "Nyheter"
     },
     "en": {
         "titleInHero": "Something magical will happen when you read a good book.",
