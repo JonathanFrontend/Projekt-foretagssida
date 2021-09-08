@@ -35,6 +35,7 @@ function About() {
                     <h3 className="about-h3">{text().aboutText.aboutH3Text}</h3>
 
                 <div className="personal-content">
+                {/*Funktion som hämtar data från personal och sedan mappar vi ut vår struktur.*/}
                     {text().personalInfo.map((staff, key) => <div className="personal-card" key={key}> 
                     <img className="image"src={`/images/${staff.img}`} alt={staff.alt_text}/> 
                         <div className="about-text">
