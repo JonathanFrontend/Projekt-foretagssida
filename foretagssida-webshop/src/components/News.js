@@ -10,7 +10,6 @@ import { useSelector } from 'react-redux';
 
 export default function News() {
     let stateLang = useSelector(state => {return state.lang});
-    console.log(stateLang);
 
     let [addFilter, setAddFilter] = useState(false);
     let [addSort, setAddSort] = useState(false);
@@ -43,8 +42,6 @@ export default function News() {
     const articles = text().articlesArr;
     let [content, setContent] = useState(articles)
 
-    
-
     const [checkedOne, setCheckedOne] = useState(false);
     const [checkedTwo, setCheckedTwo] = useState(false);
 
@@ -58,9 +55,7 @@ export default function News() {
     }
 
     // This useeffect is handling the Filter function
-
     useEffect(() => {
-        
         if (checkedOne === false && checkedTwo === false) {
             setContent(articles)
 
@@ -75,9 +70,7 @@ export default function News() {
             const art = articles.filter(article => article.label === 'articles' || article.label === 'artiklar')
             setContent(art)
         }
-
     }, [checkedOne, checkedTwo, stateLang, articles]);
-
 
     return (
         <div>
@@ -85,7 +78,9 @@ export default function News() {
             <div className="header-img">
                 <h1 className="header-text">{text().news}</h1>
             </div>
+
             <div className="app-container">
+                
                 <div className="newsWrapper">
 
                     <h2 className="newsH2">{text().newsH2}</h2>
@@ -100,6 +95,7 @@ export default function News() {
                                     <img className="arrow_size purp" src={arrowDownPurp} alt="arrow_down" />
                                 </button>
                             </div>
+
                             {addFilter ?
                                 <div className="newsButtonBox">
                                     <aside className="newsAside">
@@ -125,6 +121,7 @@ export default function News() {
                                     <img className="arrow_size" src={arrowDownPurp} alt="arrow_down" />
                                 </button>
                             </div>
+
                             {addSort ?
                                 <div className="articleButtonBox">
                                     <aside className="articleAside">
@@ -138,7 +135,9 @@ export default function News() {
                                         <input type="radio" name="sort" onClick={() => setRadioChecked(false)} />
                                     </aside>
                                 </div>
+
                                 : ''}
+
                         </div>
 
                     </div>
@@ -155,8 +154,11 @@ export default function News() {
                             </div>
                         )}
                     </div>
+
                 </div>
+
             </div>
+            
         </div >
     )
 }
