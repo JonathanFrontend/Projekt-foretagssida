@@ -33,7 +33,6 @@ function Book(props){
             <span className={"check " + typeOfCheck} onClick={() => setWantToRead(!wantToRead)}>
             {wantToRead ? <i className="fas fa-check"></i> : <i className="fas fa-plus"></i>}
             </span>
-            {/* <img src={`/images/${props.book.poster}`} alt="{props.book.title}" className="book-image"/> */}
             <div className="book-poster" style={{backgroundImage: `url("/images/${props.book.poster}")`}}>
 
             </div>
