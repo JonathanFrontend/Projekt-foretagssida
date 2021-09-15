@@ -18,7 +18,6 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/faq" component={Faq} />
         <Route path="/news" component={News} />
-        {/* <Route component={ErrorPage} />  */}
 
       </Switch>
 
